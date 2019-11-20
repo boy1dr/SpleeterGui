@@ -4,9 +4,13 @@ Windows desktop front end for Spleeter - AI source separation
 This project is a simple C# desktop front end for Spleeter.
 
 If you just want to run the program and don't care about building it, you can just grab this ZIP file  
-https://drive.google.com/file/d/1NPu1bXGxt2mPhp0LkqmSMPKJCWauZP4n/view?usp=sharing  
+https://drive.google.com/open?id=1a4hGYrezNzjjc_CGfRMWOoPBnf7vuBdL  
 extract it, and run SpleeterGui.exe
 
+Here's a quick video running it https://www.youtube.com/watch?v=bdNzVPLzOLE
+
+You WILL need to grab the python files from the google drive and pop it in the bin/debug/python folder. 
+or do your own python/spleeter install and tweak the paths in the c# app.
 
 OR clone this repo and run SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.exe
 
