@@ -12,8 +12,6 @@ Here's a quick video running it https://www.youtube.com/watch?v=bdNzVPLzOLE
 You WILL need to grab the python files from the google drive and pop it in the bin/debug/python folder. 
 or do your own python/spleeter install and tweak the paths in the c# app.
 
-OR clone this repo and run SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.exe
-
 First run....The first run will take a little longer and it will scroll a whole bunch of text in the command window when you hit "process". this is normal. To keep this project small i have not included the working files for spleeter, python will automatically fetch them as needed from the spleeter github project.
 
 Here are some examples of what spleeter can do  
