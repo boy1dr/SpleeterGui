@@ -1,0 +1,11 @@
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.exe.config
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.exe
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.pdb
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.Form1.resources
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.Properties.Resources.resources
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.GenerateResource.cache
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.exe
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.pdb
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.Form2.resources
+C:\Users\chris\source\repos\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csprojResolveAssemblyReference.cache
