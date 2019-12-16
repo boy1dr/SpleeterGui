@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 // 2019 Maken it so.
@@ -17,6 +19,9 @@ namespace SpleeterGui
 {
     public partial class Form1 : Form
     {
+        private bool expert_mode = true;
+        private string stem_count = "2";
+        private string mask_extension = "zeros";
 
         public Form1()
         {
@@ -26,7 +31,12 @@ namespace SpleeterGui
         public void load_stuff()
         {
             txt_output_directory.Text = Properties.Settings.Default.output_location;
-            
+
+            python_path_txt.Text = Properties.Settings.Default.python_path;
+            if (python_path_txt.Text == "")
+            {
+                python_path_txt.Text = @"python\python.exe";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -75,23 +85,21 @@ namespace SpleeterGui
                 MessageBox.Show("Please select an output directory");
                 return;
             }
-            string stems = "1";
-            if (stems1.Checked)
+            stem_count = "2";
+             if (stems2.Checked)
             {
-                stems = "1";
-            }else if (stems2.Checked)
-            {
-                stems = "2";
+                stem_count = "2";
             }
             else if (stems4.Checked)
             {
-                stems = "4";
+                stem_count = "4";
             }
             else if (stems5.Checked)
             {
-                stems = "5";
+                stem_count = "5";
             }
-            runCmd(@"/k python\\python -m spleeter separate -i " + (char)34 + txt_input_song.Text + (char)34 +" -o " + (char)34 + txt_output_directory.Text + (char)34+" -p spleeter:"+ stems+"stems");
+            System.IO.File.WriteAllText(@"config.json", get_config_string());
+            runCmd( @"/k "+ build_command() );
         }
         public void runCmd(String command)
         {
@@ -115,6 +123,77 @@ namespace SpleeterGui
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void advancedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            toggle_expert();
+        }
+        public void toggle_expert()
+        {
+            expert_mode = !expert_mode;
+            if (expert_mode)
+            {
+                Form1.ActiveForm.Width = 980;
+                menuStrip1.Items[1].Text = "&Expert Mode";
+            }
+            else
+            {
+                Form1.ActiveForm.Width = 610;
+                menuStrip1.Items[1].Text = "Simpl&e Mode";
+            }
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            toggle_expert();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Clipboard.SetText(build_command());
+        }
+        private string build_command()
+        {
+            String the_command = python_path_txt.Text + @" -m spleeter separate -i " + (char)34 + txt_input_song.Text + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -p config.json";
+            return the_command;
+        }
+
+        private void python_path_set_Click(object sender, EventArgs e)
+        {
+            openFileDialog2.ShowDialog();
+        }
+
+        private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
+        {
+            python_path_txt.Text = openFileDialog2.FileName.ToString();
+            Properties.Settings.Default.python_path = python_path_txt.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private string get_config_string()
+        {
+            string readText = File.ReadAllText(stem_count + "stems.json");
+            if (mask_extension == "average")
+            {
+                readText = readText.Replace("zeros", "average");
+            }
+            return readText;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            mask_extension = checkBox1.Checked ? "average" : "zeros";
+        }
+
+        private void install_spleeter_btn_Click(object sender, EventArgs e)
+        {
+            runCmd( python_path_txt.Text + @" -m pip install spleeter");
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://makenweb.com/spleeter_help.php");
         }
     }
 }

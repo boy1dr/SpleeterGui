@@ -29,13 +29,13 @@ namespace SpleeterGui
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.stems1 = new System.Windows.Forms.RadioButton();
             this.stems2 = new System.Windows.Forms.RadioButton();
             this.stems4 = new System.Windows.Forms.RadioButton();
             this.stems5 = new System.Windows.Forms.RadioButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutSpleeterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
@@ -48,7 +48,18 @@ namespace SpleeterGui
             this.label3 = new System.Windows.Forms.Label();
             this.txt_input_song = new System.Windows.Forms.TextBox();
             this.txt_output_directory = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.install_spleeter_btn = new System.Windows.Forms.Button();
+            this.python_path_set = new System.Windows.Forms.Button();
+            this.python_path_txt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -63,21 +74,11 @@ namespace SpleeterGui
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // stems1
-            // 
-            this.stems1.AutoSize = true;
-            this.stems1.Location = new System.Drawing.Point(28, 143);
-            this.stems1.Name = "stems1";
-            this.stems1.Size = new System.Drawing.Size(74, 17);
-            this.stems1.TabIndex = 4;
-            this.stems1.Text = "Vocal only";
-            this.stems1.UseVisualStyleBackColor = true;
-            // 
             // stems2
             // 
             this.stems2.AutoSize = true;
             this.stems2.Checked = true;
-            this.stems2.Location = new System.Drawing.Point(28, 166);
+            this.stems2.Location = new System.Drawing.Point(28, 146);
             this.stems2.Name = "stems2";
             this.stems2.Size = new System.Drawing.Size(140, 17);
             this.stems2.TabIndex = 5;
@@ -88,7 +89,7 @@ namespace SpleeterGui
             // stems4
             // 
             this.stems4.AutoSize = true;
-            this.stems4.Location = new System.Drawing.Point(28, 189);
+            this.stems4.Location = new System.Drawing.Point(28, 169);
             this.stems4.Name = "stems4";
             this.stems4.Size = new System.Drawing.Size(167, 17);
             this.stems4.TabIndex = 6;
@@ -98,7 +99,7 @@ namespace SpleeterGui
             // stems5
             // 
             this.stems5.AutoSize = true;
-            this.stems5.Location = new System.Drawing.Point(28, 212);
+            this.stems5.Location = new System.Drawing.Point(28, 192);
             this.stems5.Name = "stems5";
             this.stems5.Size = new System.Drawing.Size(206, 17);
             this.stems5.TabIndex = 7;
@@ -109,10 +110,12 @@ namespace SpleeterGui
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.aboutToolStripMenuItem});
+            this.advancedToolStripMenuItem,
+            this.aboutToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(597, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(964, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -127,9 +130,16 @@ namespace SpleeterGui
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // advancedToolStripMenuItem
+            // 
+            this.advancedToolStripMenuItem.Name = "advancedToolStripMenuItem";
+            this.advancedToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.advancedToolStripMenuItem.Text = "Simpl&e mode";
+            this.advancedToolStripMenuItem.Click += new System.EventHandler(this.advancedToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -181,7 +191,7 @@ namespace SpleeterGui
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button3.Location = new System.Drawing.Point(423, 186);
+            this.button3.Location = new System.Drawing.Point(423, 166);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 43);
             this.button3.TabIndex = 11;
@@ -235,11 +245,108 @@ namespace SpleeterGui
             this.txt_output_directory.Size = new System.Drawing.Size(342, 22);
             this.txt_output_directory.TabIndex = 16;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.linkLabel1);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.install_spleeter_btn);
+            this.groupBox1.Controls.Add(this.python_path_set);
+            this.groupBox1.Controls.Add(this.python_path_txt);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Location = new System.Drawing.Point(605, 38);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(347, 180);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Expert settings";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(14, 155);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(192, 13);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Copy the current spleeter run command";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(134, 113);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(176, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Only required for new python installs";
+            // 
+            // install_spleeter_btn
+            // 
+            this.install_spleeter_btn.Location = new System.Drawing.Point(17, 108);
+            this.install_spleeter_btn.Name = "install_spleeter_btn";
+            this.install_spleeter_btn.Size = new System.Drawing.Size(111, 23);
+            this.install_spleeter_btn.TabIndex = 4;
+            this.install_spleeter_btn.Text = "Run spleeter install";
+            this.install_spleeter_btn.UseVisualStyleBackColor = true;
+            this.install_spleeter_btn.Click += new System.EventHandler(this.install_spleeter_btn_Click);
+            // 
+            // python_path_set
+            // 
+            this.python_path_set.Location = new System.Drawing.Point(313, 73);
+            this.python_path_set.Name = "python_path_set";
+            this.python_path_set.Size = new System.Drawing.Size(28, 20);
+            this.python_path_set.TabIndex = 3;
+            this.python_path_set.Text = "...";
+            this.python_path_set.UseVisualStyleBackColor = true;
+            this.python_path_set.Click += new System.EventHandler(this.python_path_set_Click);
+            // 
+            // python_path_txt
+            // 
+            this.python_path_txt.Location = new System.Drawing.Point(17, 73);
+            this.python_path_txt.Name = "python_path_txt";
+            this.python_path_txt.Size = new System.Drawing.Size(290, 20);
+            this.python_path_txt.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Python location";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(17, 26);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(158, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Full bandwidth (High quality)";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
+            this.openFileDialog2.Filter = "EXE Files|*.exe";
+            this.openFileDialog2.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog2_FileOk);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 261);
+            this.ClientSize = new System.Drawing.Size(964, 230);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_output_directory);
             this.Controls.Add(this.txt_input_song);
             this.Controls.Add(this.label3);
@@ -250,17 +357,21 @@ namespace SpleeterGui
             this.Controls.Add(this.stems5);
             this.Controls.Add(this.stems4);
             this.Controls.Add(this.stems2);
-            this.Controls.Add(this.stems1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "SpleeterGUI";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Text = "SpleeterGUI V1.1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,7 +379,6 @@ namespace SpleeterGui
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton stems1;
         private System.Windows.Forms.RadioButton stems2;
         private System.Windows.Forms.RadioButton stems4;
         private System.Windows.Forms.RadioButton stems5;
@@ -287,6 +397,17 @@ namespace SpleeterGui
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_input_song;
         private System.Windows.Forms.TextBox txt_output_directory;
+        private System.Windows.Forms.ToolStripMenuItem advancedToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button python_path_set;
+        private System.Windows.Forms.TextBox python_path_txt;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button install_spleeter_btn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
     }
 }
 

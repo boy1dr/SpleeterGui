@@ -1,0 +1,9 @@
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Release\SpleeterGui.exe.config
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Release\SpleeterGui.exe
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Release\SpleeterGui.pdb
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.csprojAssemblyReference.cache
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.Form1.resources
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.Properties.Resources.resources
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.csproj.GenerateResource.cache
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.exe
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.pdb
