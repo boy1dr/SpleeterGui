@@ -6,13 +6,13 @@ This project is a simple C# desktop front end for Spleeter.
 17/12/2019 Version 1.1 update. Added High quality/expert mode.  
 
 If you just want to run the program and don't care about building it, you can just grab this ZIP file  
-https://drive.google.com/open?id=1a4hGYrezNzjjc_CGfRMWOoPBnf7vuBdL  
+https://drive.google.com/open?id=1PlZKGzs0K7da5Rq036qChdz3-_Fc9bpq 
 extract it, and run SpleeterGui.exe
 
 Here's a quick video running it https://www.youtube.com/watch?v=bdNzVPLzOLE
 
 You WILL need to grab the python files from the google drive and pop it in the bin/debug/python folder. 
-or do your own python/spleeter install and tweak the paths in the c# app.
+or do your own python/spleeter install and update the python location in the expert mode of the GUI.
 
 First run....The first run will take a little longer and it will scroll a whole bunch of text in the command window when you hit "process". this is normal. To keep this project small i have not included the working files for spleeter, python will automatically fetch them as needed from the spleeter github project.
 
