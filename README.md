@@ -3,7 +3,7 @@ Windows desktop front end for Spleeter - AI source separation
 
 This project is a simple C# desktop front end for Spleeter.
 
-21/12/2019 Version 2.0 update. Interface update, added Batch processing. 
+21/12/2019 Version 2.0 update. Interface update, added Batch processing.  
 17/12/2019 Version 1.1 update. Added High quality/expert mode.  
 
 If you just want to run the program and don't care about building it, you can just grab this ZIP file  
