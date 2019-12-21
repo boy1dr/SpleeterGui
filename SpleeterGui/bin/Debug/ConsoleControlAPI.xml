@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConsoleControlAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ConsoleControlAPI.Imports.GenerateConsoleCtrlEvent(ConsoleControlAPI.CTRL_EVENT,System.UInt32)">
+            <summary>
+            Sends a specified signal to a console process group that shares the console associated with the calling process.
+            </summary>
+            <param name="dwCtrlEvent">The type of signal to be generated.</param>
+            <param name="dwProcessGroupId">The identifier of the process group to receive the signal. A process group is created when the CREATE_NEW_PROCESS_GROUP flag is specified in a call to the CreateProcess function. The process identifier of the new process is also the process group identifier of a new process group. The process group includes all processes that are descendants of the root process. Only those processes in the group that share the same console as the calling process receive the signal. In other words, if a process in the group creates a new console, that process does not receive the signal, nor do its descendants.
+            If this parameter is zero, the signal is generated in all processes that share the console of the calling process.</param>
+            <returns>If the function succeeds, the return value is nonzero.
+            If the function fails, the return value is zero. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="T:ConsoleControlAPI.CTRL_EVENT">
+            <summary>
+            The type of signal to be generated.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.CTRL_EVENT.CTRL_C_EVENT">
+            <summary>
+            Generates a CTRL+C signal. This signal cannot be generated for process groups. If dwProcessGroupId is nonzero, this function will succeed, but the CTRL+C signal will not be received by processes within the specified process group.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.CTRL_EVENT.CTRL_BREAK_EVENT">
+            <summary>
+            Generates a CTRL+BREAK signal.
+            </summary>
+        </member>
+        <member name="T:ConsoleControlAPI.ProcessEventArgs">
+            <summary>
+            The ProcessEventArgs are arguments for a console event.
+            </summary>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessEventArgs.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> class.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessEventArgs.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> class.
+            </summary>
+            <param name="code">The code.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessEventArgs.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> class.
+            </summary>
+            <param name="content">The content.</param>
+            <param name="code">The code.</param>
+        </member>
+        <member name="P:ConsoleControlAPI.ProcessEventArgs.Content">
+            <summary>
+            Gets the content.
+            </summary>
+        </member>
+        <member name="P:ConsoleControlAPI.ProcessEventArgs.Code">
+            <summary>
+            Gets or sets the code.
+            </summary>
+            <value>
+            The code.
+            </value>
+        </member>
+        <member name="T:ConsoleControlAPI.ProcessEventHandler">
+            <summary>
+            A ProcessEventHandler is a delegate for process input/output events.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="args">The <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:ConsoleControlAPI.ProcessInterface">
+            <summary>
+            A class the wraps a process, allowing programmatic input and output.
+            </summary>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControlAPI.ProcessInterface"/> class.
+            </summary>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.outputWorker_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+            <summary>
+            Handles the ProgressChanged event of the outputWorker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.ProgressChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.outputWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Handles the DoWork event of the outputWorker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.DoWorkEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.errorWorker_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+            <summary>
+            Handles the ProgressChanged event of the errorWorker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.ProgressChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.errorWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Handles the DoWork event of the errorWorker control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.DoWorkEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.StartProcess(System.String,System.String)">
+            <summary>
+            Runs a process.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <param name="arguments">The arguments.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.StartProcess(System.Diagnostics.ProcessStartInfo)">
+            <summary>
+            Runs a process.
+            </summary>
+            <param name="processStartInfo"><see cref="T:System.Diagnostics.ProcessStartInfo"/> to pass to the process.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.StopProcess">
+            <summary>
+            Stops the process.
+            </summary>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.currentProcess_Exited(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Exited event of the currentProcess control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.FireProcessOutputEvent(System.String)">
+            <summary>
+            Fires the process output event.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.FireProcessErrorEvent(System.String)">
+            <summary>
+            Fires the process error output event.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.FireProcessInputEvent(System.String)">
+            <summary>
+            Fires the process input event.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.FireProcessExitEvent(System.Int32)">
+            <summary>
+            Fires the process exit event.
+            </summary>
+            <param name="code">The code.</param>
+        </member>
+        <member name="M:ConsoleControlAPI.ProcessInterface.WriteInput(System.String)">
+            <summary>
+            Writes the input.
+            </summary>
+            <param name="input">The input.</param>
+        </member>
+        <member name="F:ConsoleControlAPI.ProcessInterface.process">
+            <summary>
+            The current process.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.ProcessInterface.inputWriter">
+            <summary>
+            The input writer.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.ProcessInterface.outputReader">
+            <summary>
+            The output reader.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.ProcessInterface.errorReader">
+            <summary>
+            The error reader.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.ProcessInterface.outputWorker">
+            <summary>
+            The output worker.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.ProcessInterface.errorWorker">
+            <summary>
+            The error worker.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.ProcessInterface.processFileName">
+            <summary>
+            Current process file name.
+            </summary>
+        </member>
+        <member name="F:ConsoleControlAPI.ProcessInterface.processArguments">
+            <summary>
+            Arguments sent to the current process.
+            </summary>
+        </member>
+        <member name="E:ConsoleControlAPI.ProcessInterface.OnProcessOutput">
+            <summary>
+            Occurs when process output is produced.
+            </summary>
+        </member>
+        <member name="E:ConsoleControlAPI.ProcessInterface.OnProcessError">
+            <summary>
+            Occurs when process error output is produced.
+            </summary>
+        </member>
+        <member name="E:ConsoleControlAPI.ProcessInterface.OnProcessInput">
+            <summary>
+            Occurs when process input is produced.
+            </summary>
+        </member>
+        <member name="E:ConsoleControlAPI.ProcessInterface.OnProcessExit">
+            <summary>
+            Occurs when the process ends.
+            </summary>
+        </member>
+        <member name="P:ConsoleControlAPI.ProcessInterface.IsProcessRunning">
+            <summary>
+            Gets a value indicating whether this instance is process running.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is process running; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ConsoleControlAPI.ProcessInterface.Process">
+            <summary>
+            Gets the internal process.
+            </summary>
+        </member>
+        <member name="P:ConsoleControlAPI.ProcessInterface.ProcessFileName">
+            <summary>
+            Gets the name of the process.
+            </summary>
+            <value>
+            The name of the process.
+            </value>
+        </member>
+        <member name="P:ConsoleControlAPI.ProcessInterface.ProcessArguments">
+            <summary>
+            Gets the process arguments.
+            </summary>
+        </member>
+    </members>
+</doc>

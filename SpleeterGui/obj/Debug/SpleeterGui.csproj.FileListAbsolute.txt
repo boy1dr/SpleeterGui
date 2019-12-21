@@ -18,3 +18,8 @@ C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.Pr
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.GenerateResource.cache
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.exe
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.pdb
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControlAPI.dll
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControlAPI.xml
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CopyComplete
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControl.dll
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControl.xml

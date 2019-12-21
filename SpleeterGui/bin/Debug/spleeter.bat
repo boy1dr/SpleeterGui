@@ -1,0 +1,2 @@
+E:\temp\Spleeter\Spleeter_Desktop_V1.0\python\python.exe -W ignore -m spleeter separate -i "E:\music\bjoe\Elton John - Don't Go Breaking My Heart [with Kiki Dee] (Greatest Hits 1970-2002 16_34)-70IwMx57sjE.mp3" "E:\music\bjoe\Elton John - Goodbye Yellow Brick Road (Greatest Hits 1970-2002 8_34)-lVL9Lb-dUUs.mp3" "E:\music\bjoe\Elton John - Crocodile Rock (Greatest Hits 1970-2002 5_34)-DUNdD8aWxZA.mp3"  -o "C:\Users\chris\Desktop\output" -p config.json
+@echo finished

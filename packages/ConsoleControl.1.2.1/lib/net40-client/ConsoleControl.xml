@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConsoleControl</name>
+    </assembly>
+    <members>
+        <member name="T:ConsoleControl.ConsoleEventHandler">
+            <summary>
+            The console event handler is used for console events.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="args">The <see cref="T:ConsoleControl.ConsoleEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:ConsoleControl.ConsoleControl">
+            <summary>
+            The Console Control allows you to embed a basic console in your application.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControl.ConsoleControl"/> class.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.processInterace_OnProcessError(System.Object,ConsoleControlAPI.ProcessEventArgs)">
+            <summary>
+            Handles the OnProcessError event of the processInterace control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.processInterace_OnProcessOutput(System.Object,ConsoleControlAPI.ProcessEventArgs)">
+            <summary>
+            Handles the OnProcessOutput event of the processInterace control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.processInterace_OnProcessInput(System.Object,ConsoleControlAPI.ProcessEventArgs)">
+            <summary>
+            Handles the OnProcessInput event of the processInterace control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.processInterace_OnProcessExit(System.Object,ConsoleControlAPI.ProcessEventArgs)">
+            <summary>
+            Handles the OnProcessExit event of the processInterace control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The <see cref="T:ConsoleControlAPI.ProcessEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.InitialiseKeyMappings">
+            <summary>
+            Initialises the key mappings.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.richTextBoxConsole_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Handles the KeyDown event of the richTextBoxConsole control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Forms.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.WriteOutput(System.String,System.Drawing.Color)">
+            <summary>
+            Writes the output to the console control.
+            </summary>
+            <param name="output">The output.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.ClearOutput">
+            <summary>
+            Clears the output.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.WriteInput(System.String,System.Drawing.Color,System.Boolean)">
+            <summary>
+            Writes the input to the console control.
+            </summary>
+            <param name="input">The input.</param>
+            <param name="color">The color.</param>
+            <param name="echo">if set to <c>true</c> echo the input.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.StartProcess(System.String,System.String)">
+            <summary>
+            Runs a process.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <param name="arguments">The arguments.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.StopProcess">
+            <summary>
+            Stops the process.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.FireConsoleOutputEvent(System.String)">
+            <summary>
+            Fires the console output event.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.FireConsoleInputEvent(System.String)">
+            <summary>
+            Fires the console input event.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="F:ConsoleControl.ConsoleControl.processInterace">
+            <summary>
+            The internal process interface used to interface with the process.
+            </summary>
+        </member>
+        <member name="F:ConsoleControl.ConsoleControl.inputStart">
+            <summary>
+            Current position that input starts at.
+            </summary>
+        </member>
+        <member name="F:ConsoleControl.ConsoleControl.isInputEnabled">
+            <summary>
+            The is input enabled flag.
+            </summary>
+        </member>
+        <member name="F:ConsoleControl.ConsoleControl.lastInput">
+            <summary>
+            The last input string (used so that we can make sure we don't echo input twice).
+            </summary>
+        </member>
+        <member name="F:ConsoleControl.ConsoleControl.keyMappings">
+            <summary>
+            The key mappings.
+            </summary>
+        </member>
+        <member name="F:ConsoleControl.ConsoleControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ConsoleControl.ConsoleControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="E:ConsoleControl.ConsoleControl.OnConsoleOutput">
+            <summary>
+            Occurs when console output is produced.
+            </summary>
+        </member>
+        <member name="E:ConsoleControl.ConsoleControl.OnConsoleInput">
+            <summary>
+            Occurs when console input is produced.
+            </summary>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.ShowDiagnostics">
+            <summary>
+            Gets or sets a value indicating whether to show diagnostics.
+            </summary>
+            <value>
+              <c>true</c> if show diagnostics; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.IsInputEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance is input enabled.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is input enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.SendKeyboardCommandsToProcess">
+            <summary>
+            Gets or sets a value indicating whether [send keyboard commands to process].
+            </summary>
+            <value>
+            	<c>true</c> if [send keyboard commands to process]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.IsProcessRunning">
+            <summary>
+            Gets a value indicating whether this instance is process running.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is process running; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.InternalRichTextBox">
+            <summary>
+            Gets the internal rich text box.
+            </summary>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.ProcessInterface">
+            <summary>
+            Gets the process interface.
+            </summary>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.KeyMappings">
+            <summary>
+            Gets the key mappings.
+            </summary>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.Font">
+            <summary>
+            Gets or sets the font of the text displayed by the control.
+            </summary>
+            <returns>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultFont" /> property.</returns>
+              <PermissionSet>
+              <IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+              <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode, ControlEvidence" />
+              <IPermission class="System.Diagnostics.PerformanceCounterPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+              </PermissionSet>
+        </member>
+        <member name="P:ConsoleControl.ConsoleControl.BackColor">
+            <summary>
+            Gets or sets the background color for the control.
+            </summary>
+            <returns>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</returns>
+              <PermissionSet>
+              <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+              </PermissionSet>
+        </member>
+        <member name="T:ConsoleControl.Resfinder">
+            <summary>
+            Used to allow us to find resources properly.
+            </summary>
+        </member>
+        <member name="T:ConsoleControl.ConsoleEventArgs">
+            <summary>
+            The ConsoleEventArgs are arguments for a console event.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.ConsoleEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControl.ConsoleEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.ConsoleEventArgs.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControl.ConsoleEventArgs"/> class.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="P:ConsoleControl.ConsoleEventArgs.Content">
+            <summary>
+            Gets the content.
+            </summary>
+        </member>
+        <member name="T:ConsoleControl.KeyMapping">
+            <summary>
+            A KeyMapping defines how a key combination should
+            be mapped to a SendKeys message.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.KeyMapping.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControl.KeyMapping"/> class.
+            </summary>
+        </member>
+        <member name="M:ConsoleControl.KeyMapping.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Windows.Forms.Keys,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConsoleControl.KeyMapping"/> class.
+            </summary>
+            <param name="control">if set to <c>true</c> [control].</param>
+            <param name="alt">if set to <c>true</c> [alt].</param>
+            <param name="shift">if set to <c>true</c> [shift].</param>
+            <param name="keyCode">The key code.</param>
+            <param name="sendKeysMapping">The send keys mapping.</param>
+            <param name="streamMapping">The stream mapping.</param>
+        </member>
+        <member name="P:ConsoleControl.KeyMapping.IsControlPressed">
+            <summary>
+            Gets or sets a value indicating whether this instance is control pressed.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is control pressed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.KeyMapping.IsAltPressed">
+            <summary>
+            Gets or sets a value indicating whether alt is pressed.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is alt pressed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.KeyMapping.IsShiftPressed">
+            <summary>
+            Gets or sets a value indicating whether this instance is shift pressed.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is shift pressed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.KeyMapping.KeyCode">
+            <summary>
+            Gets or sets the key code.
+            </summary>
+            <value>
+            The key code.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.KeyMapping.SendKeysMapping">
+            <summary>
+            Gets or sets the send keys mapping.
+            </summary>
+            <value>
+            The send keys mapping.
+            </value>
+        </member>
+        <member name="P:ConsoleControl.KeyMapping.StreamMapping">
+            <summary>
+            Gets or sets the stream mapping.
+            </summary>
+            <value>
+            The stream mapping.
+            </value>
+        </member>
+    </members>
+</doc>
