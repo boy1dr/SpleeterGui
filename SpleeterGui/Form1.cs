@@ -59,7 +59,7 @@ namespace SpleeterGui
                     files_to_process.Add(file);
                     files_remain++;
                 }
-                textBox1.Text = "\r\nStarting";
+                textBox1.AppendText("Starting processing of all songs\r\n");
                 progressBar1.Maximum = files_remain + 1;
                 progressBar1.Value = 0; 
                 progress_txt.Text = "Starting..." + files_remain + " songs remaining";
@@ -81,31 +81,33 @@ namespace SpleeterGui
                 progressBar1.Value = progressBar1.Value + 1;
                 Console.WriteLine("starting " + files_to_process[0]);
                 System.IO.File.WriteAllText(storage + @"\config.json", get_config_string());
-                textBox1.Text = "Processing " + files_to_process[0] + textBox1.Text;
+                textBox1.AppendText("Processing " + files_to_process[0] + "\r\n");
                 progress_txt.Text = "Working..." + files_remain + " songs remaining";
                 files_remain--;
                 
                 ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m spleeter separate -i " + (char)34 + files_to_process[0] + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -p " + (char)34 + storage + @"\config.json" + (char)34);
-                files_to_process.Remove(files_to_process[0]);
                 processStartInfo.UseShellExecute = false;
                 processStartInfo.ErrorDialog = false;
                 processStartInfo.RedirectStandardOutput = true;
-                
+                processStartInfo.RedirectStandardError = true;
+                processStartInfo.CreateNoWindow = true;
+
+                files_to_process.Remove(files_to_process[0]);
+
                 Process process = new Process();
                 process.StartInfo = processStartInfo;
                 process.EnableRaisingEvents = true;
-                process.StartInfo.CreateNoWindow = true;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.RedirectStandardOutput = true;
                 process.Exited += new EventHandler(ProcessExited);
-                process.OutputDataReceived += OutputHandler;
+                process.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
+                process.ErrorDataReceived += new DataReceivedEventHandler(ErrorHandler);
                 bool processStarted = process.Start();
                 process.BeginOutputReadLine();
+                process.BeginErrorReadLine();
             }
             else
             {
                 progress_txt.Text = "idle";
-                textBox1.Text = "Finished \n" + textBox1.Text;
+                textBox1.AppendText("Finished processing all songs\r\n");
                 progressBar1.Value = progressBar1.Maximum;
             }
         }
@@ -114,7 +116,21 @@ namespace SpleeterGui
         {
             this.BeginInvoke(new MethodInvoker(() =>
             {
-                textBox1.Text = (e.Data ?? string.Empty) + "\r\n" + textBox1.Text;  //this should work, but it doesn't :(
+                if (!String.IsNullOrEmpty(e.Data))
+                {
+                    textBox1.AppendText(e.Data.TrimEnd('\r', '\n') + "\r\n");
+                }
+            }));
+        }
+
+        void ErrorHandler(object sender, DataReceivedEventArgs e)
+        {
+            this.BeginInvoke(new MethodInvoker(() =>
+            {
+                if (!String.IsNullOrEmpty(e.Data))
+                {
+                    textBox1.AppendText(e.Data.TrimEnd('\r', '\n') + "\r\n");
+                }
             }));
         }
 

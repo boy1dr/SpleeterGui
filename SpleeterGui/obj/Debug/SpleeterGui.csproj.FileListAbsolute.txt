@@ -21,3 +21,16 @@ C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.pd
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControlAPI.dll
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControlAPI.xml
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CopyComplete
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.exe.config
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.exe
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.pdb
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControlAPI.dll
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControlAPI.xml
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csprojAssemblyReference.cache
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.Form1.resources
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.Properties.Resources.resources
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.GenerateResource.cache
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CoreCompileInputs.cache
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CopyComplete
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.exe
+C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.pdb
