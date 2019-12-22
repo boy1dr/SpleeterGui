@@ -40,8 +40,6 @@ namespace SpleeterGui
             this.runSpleeterInstallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.showDebugPanelToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.spleeterGithubPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.makenItSoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,9 +48,7 @@ namespace SpleeterGui
             this.txt_output_directory = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.consoleControl1 = new ConsoleControl.ConsoleControl();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,7 +62,6 @@ namespace SpleeterGui
             this.label7 = new System.Windows.Forms.Label();
             this.progress_txt = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +94,7 @@ namespace SpleeterGui
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(494, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(515, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -145,8 +140,6 @@ namespace SpleeterGui
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpFAQToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.showDebugPanelToolStripMenuItem1,
             this.toolStripMenuItem3,
             this.spleeterGithubPageToolStripMenuItem,
             this.makenItSoToolStripMenuItem1});
@@ -160,18 +153,6 @@ namespace SpleeterGui
             this.helpFAQToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.helpFAQToolStripMenuItem.Text = "Help && FAQ";
             this.helpFAQToolStripMenuItem.Click += new System.EventHandler(this.helpFAQToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(181, 6);
-            // 
-            // showDebugPanelToolStripMenuItem1
-            // 
-            this.showDebugPanelToolStripMenuItem1.Name = "showDebugPanelToolStripMenuItem1";
-            this.showDebugPanelToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.showDebugPanelToolStripMenuItem1.Text = "Show debug panel";
-            this.showDebugPanelToolStripMenuItem1.Click += new System.EventHandler(this.showDebugPanelToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -235,38 +216,16 @@ namespace SpleeterGui
             this.openFileDialog2.Filter = "EXE Files|*.exe";
             this.openFileDialog2.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog2_FileOk);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 231);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(494, 150);
-            this.panel1.TabIndex = 19;
-            this.panel1.Visible = false;
-            // 
             // textBox1
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Location = new System.Drawing.Point(12, 360);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(494, 150);
+            this.textBox1.Size = new System.Drawing.Size(491, 146);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Debug info will show here when processing files.";
-            // 
-            // consoleControl1
-            // 
-            this.consoleControl1.IsInputEnabled = true;
-            this.consoleControl1.Location = new System.Drawing.Point(926, 22);
-            this.consoleControl1.Name = "consoleControl1";
-            this.consoleControl1.SendKeyboardCommandsToProcess = false;
-            this.consoleControl1.ShowDiagnostics = false;
-            this.consoleControl1.Size = new System.Drawing.Size(38, 44);
-            this.consoleControl1.TabIndex = 0;
-            this.consoleControl1.Visible = false;
-            this.consoleControl1.OnConsoleOutput += new ConsoleControl.ConsoleEventHandler(this.consoleControl1_OnConsoleOutput);
             // 
             // label2
             // 
@@ -396,7 +355,8 @@ namespace SpleeterGui
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(494, 381);
+            this.ClientSize = new System.Drawing.Size(515, 518);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.progress_txt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.progressBar1);
@@ -410,27 +370,24 @@ namespace SpleeterGui
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.consoleControl1);
             this.Controls.Add(this.txt_output_directory);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.stems5);
             this.Controls.Add(this.stems4);
             this.Controls.Add(this.stems2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "SpleeterGUI V2";
+            this.Text = "SpleeterGUI V2.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -450,17 +407,13 @@ namespace SpleeterGui
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private ConsoleControl.ConsoleControl consoleControl1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setPythonLocationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem runSpleeterInstallToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpFAQToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem spleeterGithubPageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem makenItSoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem showDebugPanelToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;

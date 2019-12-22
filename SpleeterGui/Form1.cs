@@ -20,21 +20,23 @@ namespace SpleeterGui
 {
     public partial class Form1 : Form
     {
-        private string file_list = "";
         private string stem_count = "2";
         private string mask_extension = "zeros";
+        private string storage = "";
         private int files_remain = 0;
+        private List<string> files_to_process = new List<string>();
 
         public Form1()
         {
             InitializeComponent();
-            
         }
+
         public void LoadStuff()
         {
-            panel1.Visible = false;
             txt_output_directory.Text = Properties.Settings.Default.output_location;
+            storage = Application.UserAppDataPath;
         }
+
         void Form1_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
@@ -42,27 +44,86 @@ namespace SpleeterGui
 
         void Form1_DragDrop(object sender, DragEventArgs e)
         {
-            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            files_remain = 0;
-            foreach (string file in files)
+            if (files_remain == 0)
             {
-                Console.WriteLine(file);
-                file_list += (char)34 + file + (char)34 + " ";
-                files_remain++;
+                if (txt_output_directory.Text == "")
+                {
+                    MessageBox.Show("Please select an output directory");
+                    return;
+                }
+
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                files_remain = 0;
+                foreach (string file in files)
+                {
+                    files_to_process.Add(file);
+                    files_remain++;
+                }
+                textBox1.Text = "\r\nStarting";
+                progressBar1.Maximum = files_remain + 1;
+                progressBar1.Value = 0; 
+                progress_txt.Text = "Starting..." + files_remain + " songs remaining";
+                next_song();
             }
-            if (txt_output_directory.Text == "")
+        }
+   
+
+        private void next_song()
+        {
+            if (files_remain > 0)
             {
-                MessageBox.Show("Please select an output directory");
-                return;
+                string pyPath = Properties.Settings.Default.python_path;
+                if (pyPath == "python\\python.exe")
+                {
+                    pyPath = AppDomain.CurrentDomain.BaseDirectory + Properties.Settings.Default.python_path;
+                }
+
+                progressBar1.Value = progressBar1.Value + 1;
+                Console.WriteLine("starting " + files_to_process[0]);
+                System.IO.File.WriteAllText(storage + @"\config.json", get_config_string());
+                textBox1.Text = "Processing " + files_to_process[0] + textBox1.Text;
+                progress_txt.Text = "Working..." + files_remain + " songs remaining";
+                files_remain--;
+                
+                ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m spleeter separate -i " + (char)34 + files_to_process[0] + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -p " + (char)34 + storage + @"\config.json" + (char)34);
+                files_to_process.Remove(files_to_process[0]);
+                processStartInfo.UseShellExecute = false;
+                processStartInfo.ErrorDialog = false;
+                processStartInfo.RedirectStandardOutput = true;
+                
+                Process process = new Process();
+                process.StartInfo = processStartInfo;
+                process.EnableRaisingEvents = true;
+                process.StartInfo.CreateNoWindow = true;
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.RedirectStandardOutput = true;
+                process.Exited += new EventHandler(ProcessExited);
+                process.OutputDataReceived += OutputHandler;
+                bool processStarted = process.Start();
+                process.BeginOutputReadLine();
             }
-            files_remain = files_remain * Int32.Parse( stem_count);
-            progressBar1.Maximum = files_remain + 1;
-            files_remain--;
-            progress_txt.Text = "Starting..." + files_remain / Int32.Parse(stem_count) + " songs remaining";
-            System.IO.File.WriteAllText(@"config.json", get_config_string());
-            System.IO.File.WriteAllText(@"spleeter.bat", Properties.Settings.Default.python_path + @" -W ignore -m spleeter separate -i " + file_list  + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -p config.json" + "\r\n" + "@echo finished");
-            textBox1.Text = "Starting\r\n";
-            consoleControl1.StartProcess("spleeter.bat", "");
+            else
+            {
+                progress_txt.Text = "idle";
+                textBox1.Text = "Finished \n" + textBox1.Text;
+                progressBar1.Value = progressBar1.Maximum;
+            }
+        }
+
+        void OutputHandler(object sender, DataReceivedEventArgs e)
+        {
+            this.BeginInvoke(new MethodInvoker(() =>
+            {
+                textBox1.Text = (e.Data ?? string.Empty) + "\r\n" + textBox1.Text;  //this should work, but it doesn't :(
+            }));
+        }
+
+        private void ProcessExited(object sender, EventArgs e)
+        {
+            Invoke((Action)(() =>
+            {
+                next_song();
+            }));
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -120,26 +181,7 @@ namespace SpleeterGui
             mask_extension = checkBox1.Checked ? "average" : "zeros";
         }
 
-        private void consoleControl1_OnConsoleOutput(object sender, ConsoleControl.ConsoleEventArgs args)
-        {
-            String theText = args.Content.Replace("\\\\", "\\");
-            textBox1.Text = theText + "\n" + textBox1.Text;
-            if ((" " + theText).IndexOf("INFO:spleeter:File") > 0 && (" " + theText).IndexOf("written") > 0)
-            {
-                files_remain--;
-            }
-            int newval = progressBar1.Maximum - files_remain - 1;
-            if(newval> progressBar1.Maximum) { newval = progressBar1.Maximum; }
-            progressBar1.Value = progressBar1.Maximum - files_remain - 1;
-            if (files_remain > 0)
-            {
-                progress_txt.Text = "Working..." + ((files_remain / Int32.Parse(stem_count)) + 1) + " songs remaining";
-            }
-            if (theText == "finished" + "\r\n")
-            {
-                progress_txt.Text = "idle";
-            }
-        }
+       
 
         private void spleeterGithubPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -175,7 +217,7 @@ namespace SpleeterGui
         {
             stem_count = "5";
         }
-
+        /*
         private void showDebugPanelToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             if (showDebugPanelToolStripMenuItem1.Text == "Show debug panel")
@@ -191,13 +233,12 @@ namespace SpleeterGui
                 Form1.ActiveForm.Height = 420;
             }
         }
-
+        */
         private void Form1_Load(object sender, EventArgs e)
         {
             this.AllowDrop = true;
             this.DragEnter += new DragEventHandler(Form1_DragEnter);
             this.DragDrop += new DragEventHandler(Form1_DragDrop);
-            this.MinimumSize = new Size(510,420);
         }
 
         private void helpFAQToolStripMenuItem_Click(object sender, EventArgs e)

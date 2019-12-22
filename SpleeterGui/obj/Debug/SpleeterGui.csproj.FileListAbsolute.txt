@@ -21,5 +21,3 @@ C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.pd
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControlAPI.dll
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControlAPI.xml
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CopyComplete
-C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControl.dll
-C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\ConsoleControl.xml
