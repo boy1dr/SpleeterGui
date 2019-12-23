@@ -34,17 +34,5 @@ namespace SpleeterGui.Properties {
                 this["output_location"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("python\\\\python.exe")]
-        public string python_path {
-            get {
-                return ((string)(this["python_path"]));
-            }
-            set {
-                this["python_path"] = value;
-            }
-        }
     }
 }

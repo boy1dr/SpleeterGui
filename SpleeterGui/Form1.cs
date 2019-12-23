@@ -34,7 +34,7 @@ namespace SpleeterGui
         public void LoadStuff()
         {
             txt_output_directory.Text = Properties.Settings.Default.output_location;
-            storage = Application.UserAppDataPath;
+            storage = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI";
         }
 
         void Form1_DragEnter(object sender, DragEventArgs e)
@@ -72,12 +72,7 @@ namespace SpleeterGui
         {
             if (files_remain > 0)
             {
-                string pyPath = Properties.Settings.Default.python_path;
-                if (pyPath == "python\\python.exe")
-                {
-                    pyPath = AppDomain.CurrentDomain.BaseDirectory + Properties.Settings.Default.python_path;
-                }
-
+                string pyPath = storage + @"\python\python.exe";
                 progressBar1.Value = progressBar1.Value + 1;
                 Console.WriteLine("starting " + files_to_process[0]);
                 System.IO.File.WriteAllText(storage + @"\config.json", get_config_string());
@@ -86,6 +81,8 @@ namespace SpleeterGui
                 files_remain--;
                 
                 ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m spleeter separate -i " + (char)34 + files_to_process[0] + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -p " + (char)34 + storage + @"\config.json" + (char)34);
+                processStartInfo.WorkingDirectory = storage;
+
                 processStartInfo.UseShellExecute = false;
                 processStartInfo.ErrorDialog = false;
                 processStartInfo.RedirectStandardOutput = true;
@@ -176,12 +173,6 @@ namespace SpleeterGui
             Application.Exit();
         }
 
-        private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
-        {
-            Properties.Settings.Default.python_path = openFileDialog2.FileName.ToString();
-            Properties.Settings.Default.Save();
-        }
-
         private string get_config_string()
         {
             string readText = File.ReadAllText(stem_count + "stems.json");
@@ -209,16 +200,6 @@ namespace SpleeterGui
             System.Diagnostics.Process.Start("https://www.youtube.com/user/mitchellcj/videos");
         }
 
-        private void setPythonLocationToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            openFileDialog2.ShowDialog();
-        }
-
-        private void runSpleeterInstallToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            runCmd(Properties.Settings.Default.python_path + @" -m pip install spleeter");
-        }
-
         private void stems2_Click(object sender, EventArgs e)
         {
             stem_count = "2";
@@ -233,23 +214,7 @@ namespace SpleeterGui
         {
             stem_count = "5";
         }
-        /*
-        private void showDebugPanelToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (showDebugPanelToolStripMenuItem1.Text == "Show debug panel")
-            {
-                showDebugPanelToolStripMenuItem1.Text = "Hide debug panel";
-                panel1.Visible = true;
-                Form1.ActiveForm.Height = 560;
-            }
-            else
-            {
-                showDebugPanelToolStripMenuItem1.Text = "Show debug panel";
-                panel1.Visible = false;
-                Form1.ActiveForm.Height = 420;
-            }
-        }
-        */
+  
         private void Form1_Load(object sender, EventArgs e)
         {
             this.AllowDrop = true;

@@ -5,8 +5,5 @@
     <Setting Name="output_location" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="python_path" Type="System.String" Scope="User">
-      <Value Profile="(Default)">python\\python.exe</Value>
-    </Setting>
   </Settings>
 </SettingsFile>

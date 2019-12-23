@@ -1,2 +1,0 @@
-E:\temp\Spleeter\Spleeter_Desktop_V1.0\python\python.exe -W ignore -m spleeter separate -i "C:\Users\chris\Downloads\02-Track 2.mp3" "C:\Users\chris\Downloads\02-Track 2.mp3"  -o "C:\Users\chris\Desktop\output" -p config.json
-@echo finished
