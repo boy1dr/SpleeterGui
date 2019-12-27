@@ -65,6 +65,10 @@ namespace SpleeterGui
                 progress_txt.Text = "Starting..." + files_remain + " songs remaining";
                 next_song();
             }
+            else
+            {
+                System.Media.SystemSounds.Asterisk.Play();
+            }
         }
    
 
@@ -78,7 +82,6 @@ namespace SpleeterGui
                 System.IO.File.WriteAllText(storage + @"\config.json", get_config_string());
                 textBox1.AppendText("Processing " + files_to_process[0] + "\r\n");
                 progress_txt.Text = "Working..." + files_remain + " songs remaining";
-                files_remain--;
                 
                 ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m spleeter separate -i " + (char)34 + files_to_process[0] + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -p " + (char)34 + storage + @"\config.json" + (char)34);
                 processStartInfo.WorkingDirectory = storage;
@@ -106,6 +109,7 @@ namespace SpleeterGui
                 progress_txt.Text = "idle";
                 textBox1.AppendText("Finished processing all songs\r\n");
                 progressBar1.Value = progressBar1.Maximum;
+                System.Media.SystemSounds.Beep.Play();
             }
         }
 
@@ -135,6 +139,7 @@ namespace SpleeterGui
         {
             Invoke((Action)(() =>
             {
+                files_remain--;
                 next_song();
             }));
         }
@@ -175,7 +180,7 @@ namespace SpleeterGui
 
         private string get_config_string()
         {
-            string readText = File.ReadAllText(stem_count + "stems.json");
+            string readText = File.ReadAllText(storage + @"\" + stem_count + "stems.json");
             if (mask_extension == "average")
             {
                 readText = readText.Replace("zeros", "average");
@@ -259,5 +264,40 @@ namespace SpleeterGui
             stem_count = "5";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (files_remain == 0)
+            {
+                openFileDialog2.ShowDialog();
+            }
+            else
+            {
+                System.Media.SystemSounds.Asterisk.Play();
+            }
+        }
+
+        private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
+        {
+            if (files_remain == 0)
+            {
+                if (txt_output_directory.Text == "")
+                {
+                    MessageBox.Show("Please select an output directory");
+                    return;
+                }
+                files_remain = 0;
+                foreach (String file in openFileDialog2.FileNames)
+                {
+                    Debug.WriteLine("BBB"+ file);
+                    files_to_process.Add(file);
+                    files_remain++;
+                }
+                textBox1.AppendText("Starting processing of all songs\r\n");
+                progressBar1.Maximum = files_remain + 1;
+                progressBar1.Value = 0;
+                progress_txt.Text = "Starting..." + files_remain + " songs remaining";
+                next_song();
+            }
+        }
     }
 }
