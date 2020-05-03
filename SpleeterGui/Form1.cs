@@ -21,7 +21,7 @@ namespace SpleeterGui
     public partial class Form1 : Form
     {
         private string stem_count = "2";
-        private string mask_extension = "zeros";
+        private string mask_extension = "average";
         private string storage = "";
         private int files_remain = 0;
         private List<string> files_to_process = new List<string>();

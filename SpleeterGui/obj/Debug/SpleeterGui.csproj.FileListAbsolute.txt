@@ -31,3 +31,4 @@ C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.cs
 C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CopyComplete
 C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.exe
 C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.pdb
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CoreCompileInputs.cache
