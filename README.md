@@ -3,6 +3,7 @@ Windows desktop front end for Spleeter - AI source separation
 
 This project is a simple C# desktop front end for Spleeter.  
 
+ 4/05/2020 Version 2.4 Bug fix: "full bandwidth" mode checked but not enabled by default.
 27/12/2019 Version 2.3 Accessibility update (process button, tab order, access labels and descriptions, ding on complete etc)   
 24/12/2019 Version 2.2 New windows MSI installer. Drag and drop processing.  
 21/12/2019 Version 2.0 update. Interface update, added Batch processing.  
@@ -14,6 +15,7 @@ Older versions...
 Version 2.0 https://drive.google.com/open?id=1O6q68IPwPtAgdpK5ZSKiY5-Ew-jmUv9Y  
 Version 1.1 https://drive.google.com/open?id=1PlZKGzs0K7da5Rq036qChdz3-_Fc9bpq  
 extract it, and run SpleeterGui.exe  
+
 
 Here's a quick video running it https://www.youtube.com/watch?v=bdNzVPLzOLE  
 
