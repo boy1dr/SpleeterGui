@@ -7,3 +7,4 @@ C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.csproj.GenerateResource.cache
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.exe
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.pdb
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Release\SpleeterGui.csproj.CoreCompileInputs.cache
