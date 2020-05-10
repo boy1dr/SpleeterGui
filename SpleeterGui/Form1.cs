@@ -6,6 +6,8 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
@@ -25,6 +27,8 @@ namespace SpleeterGui
         private string storage = "";
         private int files_remain = 0;
         private List<string> files_to_process = new List<string>();
+        private Boolean run_silent = true;
+        private String gui_version = "";
 
         public Form1()
         {
@@ -35,6 +39,11 @@ namespace SpleeterGui
         {
             txt_output_directory.Text = Properties.Settings.Default.output_location;
             storage = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI";
+            gui_version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            String version = Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString();
+            this.Text = "SpleeterGUI " + version;
+            textBox1.Text = "Showing spleeter version...\r\n";
+            run_cmd("pip show spleeter");
         }
 
         void Form1_DragEnter(object sender, DragEventArgs e)
@@ -46,6 +55,7 @@ namespace SpleeterGui
         {
             if (files_remain == 0)
             {
+                textBox1.Text = "";
                 if (txt_output_directory.Text == "")
                 {
                     MessageBox.Show("Please select an output directory");
@@ -71,11 +81,32 @@ namespace SpleeterGui
             }
         }
    
+        private void run_cmd(String cmd)
+        {
+            string pyPath = storage + @"\python\python.exe";
+            ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m " + cmd);
+            processStartInfo.WorkingDirectory = storage;
 
+            processStartInfo.UseShellExecute = false;
+            processStartInfo.ErrorDialog = false;
+            processStartInfo.RedirectStandardOutput = true;
+            processStartInfo.RedirectStandardError = true;
+            processStartInfo.CreateNoWindow = true;
+            Process process = new Process();
+            process.StartInfo = processStartInfo;
+            process.EnableRaisingEvents = true;
+            process.Exited += new EventHandler(ProcessExited);
+            process.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
+            process.ErrorDataReceived += new DataReceivedEventHandler(ErrorHandler);
+            bool processStarted = process.Start();
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+        }
         private void next_song()
         {
             if (files_remain > 0)
             {
+                run_silent = false;
                 string pyPath = storage + @"\python\python.exe";
                 progressBar1.Value = progressBar1.Value + 1;
                 Console.WriteLine("starting " + files_to_process[0]);
@@ -140,7 +171,16 @@ namespace SpleeterGui
             Invoke((Action)(() =>
             {
                 files_remain--;
-                next_song();
+                if (files_remain > -1) { 
+                    next_song();
+                }
+                if (files_remain < 0) files_remain = 0;
+                
+                if (!run_silent)
+                {
+                    textBox1.AppendText("\r\nRun complete\r\n");
+                    System.Media.SystemSounds.Beep.Play();
+                }
             }));
         }
 
@@ -160,7 +200,7 @@ namespace SpleeterGui
             }
         }
 
-        public void runCmd(String command)
+        public void runCmd_DELETE(String command)
         {
             ProcessStartInfo cmdsi = new ProcessStartInfo("cmd.exe");
             cmdsi.Arguments = command;
@@ -190,7 +230,7 @@ namespace SpleeterGui
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            mask_extension = checkBox1.Checked ? "average" : "zeros";
+            mask_extension = chkFullBandwidth.Checked ? "average" : "zeros";
         }
 
        
@@ -285,6 +325,7 @@ namespace SpleeterGui
                     MessageBox.Show("Please select an output directory");
                     return;
                 }
+                textBox1.Text = "";
                 files_remain = 0;
                 foreach (String file in openFileDialog2.FileNames)
                 {
@@ -297,6 +338,53 @@ namespace SpleeterGui
                 progressBar1.Value = 0;
                 progress_txt.Text = "Starting..." + files_remain + " songs remaining";
                 next_song();
+            }
+        }
+
+        private void spleeterupgradeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            run_silent = false;
+            textBox1.Text = "Running update command\r\nThis might take a while, wait for the beep\r\n\r\n";
+            run_cmd("pip install --upgrade spleeter");
+        }
+
+        private void checkSpleeterGUIUpdateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WebRequest request = WebRequest.Create("https://raw.githubusercontent.com/boy1dr/SpleeterGui/master/SpleeterGui/Properties/AssemblyInfo.cs");
+            WebResponse response = request.GetResponse();
+            Stream data = response.GetResponseStream();
+            string html = String.Empty;
+            int posStart=0;
+            int posEnd=0;
+            String version_check = "";
+            using (StreamReader sr = new StreamReader(data))
+            {
+                html = sr.ReadToEnd();
+            }
+            if (html != "")
+            {
+                posStart = html.IndexOf("\n[assembly: AssemblyVersion(");
+                if (posStart > 0)
+                {
+                    posStart+= 29;
+                    posEnd = html.IndexOf('"', posStart);
+                    if (posEnd > 0)
+                    {
+                        version_check = html.Substring(posStart, posEnd - posStart);
+                        if(version_check!="" && version_check != gui_version)
+                        {
+                            MessageBox.Show("Version "+ version_check + " is available");
+                        }
+                        else
+                        {
+                            MessageBox.Show("You are using the latest version");
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Unable get new version data, check internet connection.");
             }
         }
     }
