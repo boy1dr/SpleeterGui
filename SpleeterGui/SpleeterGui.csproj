@@ -23,7 +23,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>2.5.0.%2a</ApplicationVersion>
+    <ApplicationVersion>2.6.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -113,6 +113,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\spleeter_logo.jpg" />
+    <Content Include="languages_source\arabic.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="languages_source\chinese.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="languages_source\english.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="languages_source\french.xml" />
+    <Content Include="languages_source\hindi.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="languages_source\italian.xml" />
+    <Content Include="languages_source\russian.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="languages_source\spanish.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\649656_global_32x32.jpg" />
     <Content Include="spleeter_icon.ico" />
   </ItemGroup>
   <ItemGroup />

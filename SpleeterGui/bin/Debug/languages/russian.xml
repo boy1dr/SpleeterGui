@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <language english="russian" control="">русский</language>
+  <!-- menu items -->
+  <menu english="File" control="fileToolStripMenuItem">файл</menu>
+  <menu english="Exit" control="exitToolStripMenuItem">Выход</menu>
+  <menu english="Help" control="helpToolStripMenuItem">Помогите</menu>
+  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Помогите &amp; вопрос</menu>
+  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">Проверьте spleeterGUI версию</menu>
+  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Обновление ядра Spleeter</menu>
+  <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Spleeter Github страница</menu>
+  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+
+  <!-- form controls -->
+  <item english="Music source separation" control="lblSlogan1">Разделение источника музыки</item>
+  <item english="Windows desktop bundle" control="lblSlogan2">Пакет рабочего стола Windows</item>
+  <item english="Parts to separate" control="lblPartsTitle">Части для разделения</item>
+  <item english="2" control="parts_btn2">два</item>
+  <item english="Vocal + Accompaniment" control="parts_label">Вокал + аккомпанемент</item>
+  <item english="4" control="parts_btn4">четыре</item>
+  <item english="5" control="parts_btn5">пять</item>
+  <item english="Recombine (Merge output parts back together)" control="chkRecombine">Recombine (объединение выходных частей вместе)</item>
+  <item english="Vocal" control="chkRPartVocal">вокальный</item>
+  <item english="Bass" control="chkRPartBass">бас</item>
+  <item english="Drums" control="chkRPartDrums">Барабаны</item>
+  <item english="Piano" control="chkRPartPiano">пиано</item>
+  <item english="Other" control="chkRPartOther">Другой</item>
+  <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">Полная пропускная способность (16 кГц, высокое качество)</item>
+  <item english="Save to" control="btnSaveTo">Сохранить</item>
+  <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Оставьте свои музыкальные файлы здесь, чтобы начать обработку</item>
+  <item english="Or select music file(s)" control="btnSelectFiles">Или выберите музыкальный файл (ы)</item>
+  <item english="Progress" control="lblProgress">Прогресс</item>
+
+  <!-- program texts -->
+  <lang english="Showing spleeter version" control="LoadStuff_textBox1">Отображение версии spleeter</lang>
+  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Пожалуйста, выберите выходной каталог</lang>
+  <lang english="Starting" control="starting">начало</lang>
+  <lang english="Starting processing of all songs" control="starting_all">Начало обработки всех песен</lang>
+  <lang english="songs remaining" control="songs_remaining">оставшиеся песни</lang>
+  <lang english="Working" control="working">Работает</lang>
+  <lang english="Processing" control="processing">обработка</lang>
+  <lang english="idle" control="idle">вхолостую</lang>
+  <lang english="Finished processing all songs" control="finished">Закончена обработка всех песен</lang>
+  <lang english="Run complete" control="run_complete">Выполнить завершено</lang>
+  <lang english="Vocal + Accompaniment" control="vocal_accompaniment">Вокал + аккомпанемент</lang>
+  <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">Вокал + Бас + Барабаны + Другое</lang>
+  <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">Вокал + Бас + Барабаны + Фортепиано + Другое</lang>
+  <lang english="Please select an output directory" control="output_message">Пожалуйста, выберите выходной каталог</lang>
+  <lang english="Running update command" control="run_update">Запуск команды обновления</lang>
+  <lang english="This might take a while, wait for the beep" control="run_update_b">Это может занять некоторое время, подождите звукового сигнала</lang>
+  <lang english="Version" control="version">Версия</lang>
+  <lang english="is available" control="is_available">доступен</lang>
+  <lang english="You are using the latest version" control="latest">Вы используете последнюю версию</lang>
+  <lang english="Unable get new version data, check internet connection" control="unable">Невозможно получить данные новой версии, проверьте интернет-соединение</lang>
+</root>

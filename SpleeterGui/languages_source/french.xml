@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <language english="french" control="">français</language>
+  <!-- menu items -->
+  <menu english="File" control="fileToolStripMenuItem">Fichier</menu>
+  <menu english="Exit" control="exitToolStripMenuItem">Sortie</menu>
+  <menu english="Help" control="helpToolStripMenuItem">Aidez-moi</menu>
+  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Aidez-moi &amp; question</menu>
+  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">Vérifier la version GUI du spleeter</menu>
+  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Mise à niveau du noyau Spleeter</menu>
+  <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Page Github Spleeter</menu>
+  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Faites en sorte</menu>
+
+  <!-- form controls -->
+  <item english="Music source separation" control="lblSlogan1">Séparation des sources de musique</item>
+  <item english="Windows desktop bundle" control="lblSlogan2">Ensemble de bureau Windows</item>
+  <item english="Parts to separate" control="lblPartsTitle">Pièces à séparer</item>
+  <item english="2" control="parts_btn2">deux</item>
+  <item english="Vocal + Accompaniment" control="parts_label">Accompagnement vocal +</item>
+  <item english="4" control="parts_btn4">quatre</item>
+  <item english="5" control="parts_btn5">cinq</item>
+  <item english="Recombine (Merge output parts back together)" control="chkRecombine">Recombiner (fusionner les pièces de sortie ensemble)</item>
+  <item english="Vocal" control="chkRPartVocal">Vocale</item>
+  <item english="Bass" control="chkRPartBass">Basse</item>
+  <item english="Drums" control="chkRPartDrums">Tambours</item>
+  <item english="Piano" control="chkRPartPiano">Piano</item>
+  <item english="Other" control="chkRPartOther">Autre</item>
+  <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">Bande passante complète (haute qualité 16Khz)</item>
+  <item english="Save to" control="btnSaveTo">Enregistrer dans</item>
+  <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Déposez vos fichiers musicaux ici pour commencer le traitement</item>
+  <item english="Or select music file(s)" control="btnSelectFiles">Ou sélectionnez un ou plusieurs fichiers musicaux</item>
+  <item english="Progress" control="lblProgress">Le progrès</item>
+
+  <!-- program texts -->
+  <lang english="Showing spleeter version" control="LoadStuff_textBox1">Affichage de la version du spleeter</lang>
+  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Please select an output directory</lang>
+  <lang english="Starting" control="starting">Départ</lang>
+  <lang english="Starting processing of all songs" control="starting_all">Démarrage du traitement de toutes les chansons</lang>
+  <lang english="songs remaining" control="songs_remaining">chansons restantes</lang>
+  <lang english="Working" control="working">Travail</lang>
+  <lang english="Processing" control="processing">En traitement</lang>
+  <lang english="idle" control="idle">tourner au ralenti</lang>
+  <lang english="Finished processing all songs" control="finished">Traitement terminé de toutes les chansons</lang>
+  <lang english="Run complete" control="run_complete">Exécution terminée</lang>
+  <lang english="Vocal + Accompaniment" control="vocal_accompaniment">Accompagnement vocal +</lang>
+  <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">Vocal + Bass + Drums + Other</lang>
+  <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">Voix + Basse + Batterie + Piano + Autre</lang>
+  <lang english="Please select an output directory" control="output_message">Veuillez sélectionner un répertoire de sortie</lang>
+  <lang english="Running update command" control="run_update">Exécution de la commande de mise à jour</lang>
+  <lang english="This might take a while, wait for the beep" control="run_update_b">Cela peut prendre un certain temps, attendez le bip</lang>
+  <lang english="Version" control="version">Version</lang>
+  <lang english="is available" control="is_available">est disponible</lang>
+  <lang english="You are using the latest version" control="latest">Vous utilisez la dernière version</lang>
+  <lang english="Unable get new version data, check internet connection" control="unable">Impossible d'obtenir les nouvelles données de version, vérifiez la connexion Internet</lang>
+</root>

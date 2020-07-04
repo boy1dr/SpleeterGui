@@ -2,9 +2,9 @@
 Windows desktop front end for Spleeter - AI source separation  
 
 This project is a simple C# desktop front end for Spleeter. 
-
-10/05/2020 Version 2.5 UI update, Additional help menu items for version check and spleeter core ugrade, Display installed spleeter version on startup
- 4/05/2020 Version 2.4 Bug fix: "full bandwidth" mode checked but not enabled by default.
+ 4/07/2020 Version 2.6 Recombine audio and multi-lingual update.  
+10/05/2020 Version 2.5 UI update, Additional help menu items for version check and spleeter core ugrade, Display installed spleeter version on startup  
+ 4/05/2020 Version 2.4 Bug fix: "full bandwidth" mode checked but not enabled by default.  
 27/12/2019 Version 2.3 Accessibility update (process button, tab order, access labels and descriptions, ding on complete etc)   
 24/12/2019 Version 2.2 New windows MSI installer. Drag and drop processing.  
 21/12/2019 Version 2.0 update. Interface update, added Batch processing.  

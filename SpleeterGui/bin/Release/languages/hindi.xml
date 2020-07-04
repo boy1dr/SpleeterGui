@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <language english="hindi" control="">हिन्दी</language>
+  <!-- menu items -->
+  <menu english="File" control="fileToolStripMenuItem">फ़ाइल</menu>
+  <menu english="Exit" control="exitToolStripMenuItem">बाहर जाएं</menu>
+  <menu english="Help" control="helpToolStripMenuItem">मदद</menu>
+  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">मदद &amp; सवाल</menu>
+  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SpleeterGUI संस्करण की जाँच करें</menu>
+  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter कोर उन्नयन</menu>
+  <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Spleeter जीथब पृष्ठ</menu>
+  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">माकन ने ऐसा किया</menu>
+
+  <!-- form controls -->
+  <item english="Music source separation" control="lblSlogan1">संगीत स्रोत जुदाई</item>
+  <item english="Windows desktop bundle" control="lblSlogan2">विंडोज डेस्कटॉप बंडल</item>
+  <item english="Parts to separate" control="lblPartsTitle">भागों को अलग करने के लिए</item>
+  <item english="2" control="parts_btn2">दो</item>
+  <item english="Vocal + Accompaniment" control="parts_label">स्वर + त्वरण</item>
+  <item english="4" control="parts_btn4">चार</item>
+  <item english="5" control="parts_btn5">पाँच</item>
+  <item english="Recombine (Merge output parts back together)" control="chkRecombine">रिकॉम्बिन (मर्ज आउटपुट पार्ट्स वापस एक साथ)</item>
+  <item english="Vocal" control="chkRPartVocal">स्वर</item>
+  <item english="Bass" control="chkRPartBass">बास</item>
+  <item english="Drums" control="chkRPartDrums">ड्रम</item>
+  <item english="Piano" control="chkRPartPiano">पियानो</item>
+  <item english="Other" control="chkRPartOther">अन्य</item>
+  <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">पूर्ण बैंडविड्थ (16 khz उच्च गुणवत्ता)</item>
+  <item english="Save to" control="btnSaveTo">को बचाए</item>
+  <item english="Drop your music file(s) here to begin processing" control="lblDroptext">प्रसंस्करण शुरू करने के लिए अपनी संगीत फ़ाइल यहां छोड़ें</item>
+  <item english="Or select music file(s)" control="btnSelectFiles">या संगीत फ़ाइल चुनें</item>
+  <item english="Progress" control="lblProgress">प्रगति</item>
+
+  <!-- program texts -->
+  <lang english="Showing spleeter version" control="LoadStuff_textBox1">स्पिलटर संस्करण दिखा रहा है</lang>
+  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">कृपया एक आउटपुट डायरेक्टरी चुनें</lang>
+  <lang english="Starting" control="starting">शुरुआत</lang>
+  <lang english="Starting processing of all songs" control="starting_all">सभी गानों की प्रोसेसिंग शुरू</lang>
+  <lang english="songs remaining" control="songs_remaining">गाने बचे हैं</lang>
+  <lang english="Working" control="working">काम कर रहे</lang>
+  <lang english="Processing" control="processing">प्रसंस्करण</lang>
+  <lang english="idle" control="idle">बेकार</lang>
+  <lang english="Finished processing all songs" control="finished">सभी गीतों का प्रसंस्करण समाप्त</lang>
+  <lang english="Run complete" control="run_complete">पूरा चला</lang>
+  <lang english="Vocal + Accompaniment" control="vocal_accompaniment">स्वर + त्वरण</lang>
+  <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">स्वर + बास + ड्रम + अन्य</lang>
+  <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">स्वर + बास + ड्रम + पियानो + अन्य</lang>
+  <lang english="Please select an output directory" control="output_message">कृपया एक आउटपुट डायरेक्टरी चुनें</lang>
+  <lang english="Running update command" control="run_update">रनिंग अपडेट कमांड</lang>
+  <lang english="This might take a while, wait for the beep" control="run_update_b">इसमें कुछ समय लग सकता है, बीप की प्रतीक्षा करें</lang>
+  <lang english="Version" control="version">संस्करण</lang>
+  <lang english="is available" control="is_available">उपलब्ध है</lang>
+  <lang english="You are using the latest version" control="latest">आप नवीनतम संस्करण का उपयोग कर रहे हैं</lang>
+  <lang english="Unable get new version data, check internet connection" control="unable">नया संस्करण डेटा प्राप्त करने में असमर्थ, इंटरनेट कनेक्शन जांचें</lang>
+</root>

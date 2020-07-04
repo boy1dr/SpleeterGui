@@ -5,5 +5,8 @@
     <Setting Name="output_location" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">english</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
