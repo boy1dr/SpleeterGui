@@ -1,6 +1,9 @@
 # Spleeter_Gui
 Windows desktop front end for Spleeter - AI source separation  
-
+  
+!!! Windows defender is cucrrently identifying SpleeterGUI.exe as a trojan. it is a flase positive and we are waiting for microsoft to verify the file.  
+  
+  
 This project is a simple C# desktop front end for Spleeter.  
  4/07/2020 Version 2.6 Recombine audio and multi-lingual update.  
 10/05/2020 Version 2.5 UI update, Additional help menu items for version check and spleeter core ugrade, Display installed spleeter version on startup  
