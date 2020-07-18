@@ -1,8 +1,8 @@
 # Spleeter_Gui
 Windows desktop front end for Spleeter - AI source separation  
   
-!!! 17/07/2020 Windows defender is cucrrently identifying SpleeterGUI.exe as a trojan.  
-Microsoft where nice enough to remove the detection after examination but users will need to wait for defender definitions to update.  
+17/07/2020 Windows defender is currently identifying SpleeterGUI.exe as a threat.  
+Microsoft where nice enough to remove the detection after examination.  
   
   
 This project is a simple C# desktop front end for Spleeter.  
