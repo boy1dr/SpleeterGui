@@ -34,6 +34,9 @@
     <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Drop your music file(s) here to begin processing</item>
     <item english="Or select music file(s)" control="btnSelectFiles">Or select music file(s)</item>
     <item english="Progress" control="lblProgress">Progress</item>
+    <item english="Maximum song length" control="lblMaxLength">Maximum song length</item>
+    <item english="seconds" control="lblSeconds">seconds</item>
+  
 
     <!-- program texts -->
     <lang english="Showing spleeter version" control="LoadStuff_textBox1">Help: https://makenweb.com/spleeter_help.php[NL]Issues: https://github.com/boy1dr/SpleeterGui/issues[NL][NL]Showing spleeter version</lang>
@@ -58,5 +61,4 @@
     <lang english="Unable get new version data, check internet connection" control="unable">Unable get new version data, check internet connection</lang>
     <lang english="Choose output location" control="set_output">Choose output location</lang>
     <lang english="Choose location of python.exe" control="set_python_path">Choose location of python.exe</lang>
-    <lang english="Choose location of json config files" control="set_json_path">Choose location of json config files</lang>
 </root>

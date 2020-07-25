@@ -10,6 +10,9 @@
     <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Aggiorna i pacchetti di Spleeter</menu>
     <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Pagina GitHub di Spleeter</menu>
     <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+    <menu english="Advanced" control="advancedToolStripMenuItem">Avanzati</menu>
+    <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Imposta percorso python</menu>
+    <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Imposta percorso json configs</menu>
 
     <!-- form controls -->
     <item english="Music source separation" control="lblSlogan1">Separaz. delle fonti musicali</item>
@@ -30,6 +33,8 @@
     <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Rilascia qui i file musicali per iniziare l'elaborazione</item>
     <item english="Or select music file(s)" control="btnSelectFiles">O carica i file musicali</item>
     <item english="Progress" control="lblProgress">Avanzam.</item>
+    <item english="Maximum song length" control="lblMaxLength">Lunghezza massima del brano</item>
+    <item english="seconds" control="lblSeconds">secondi</item>
 
     <!-- program texts -->
     <lang english="Showing spleeter version" control="LoadStuff_textBox1">Visualizzazione della versione di Spleeter</lang>
@@ -48,8 +53,11 @@
     <lang english="Please select an output directory" control="output_message">Per favore, seleziona una cartella di uscita</lang>
     <lang english="Running update command" control="run_update">Eseguendo il comando di aggiornamento</lang>
     <lang english="This might take a while, wait for the beep" control="run_update_b">Potrebbe volerci del tempo, attendi il segnale acustico</lang>
-    <lang english="Version" control="version">È disponibile la versione</lang>
-    <lang english="is available" control="is_available"></lang>
+    <lang english="Version" control="version">versione</lang>
+    <lang english="is available" control="is_available">è disponibile</lang>
     <lang english="You are using the latest version" control="latest">Stai usando l'ultima versione</lang>
     <lang english="Unable get new version data, check internet connection" control="unable">Impossibile ottenere i dati della nuova versione, controlla la connessione a Internet</lang>
+    <lang english="Choose output location" control="set_output">Scegli la posizione di uscita</lang>
+    <lang english="Choose location of python.exe" control="set_python_path">Scegli la posizione di python.exe</lang>
+    <lang english="Choose location of json config files" control="set_json_path">Choose location of json config files</lang>
 </root>

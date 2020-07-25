@@ -33,6 +33,8 @@
   <item english="Drop your music file(s) here to begin processing" control="lblDroptext">أفلت ملفك (ملفاتك) الموسيقية هنا لبدء المعالجة</item>
   <item english="Or select music file(s)" control="btnSelectFiles">أو حدد ملف (ملفات) الموسيقى</item>
   <item english="Progress" control="lblProgress">تقدم</item>
+  <item english="Maximum song length" control="lblMaxLength">أقصى طول للأغنية</item>
+  <item english="seconds" control="lblSeconds">ثواني</item>
 
   <!-- program texts -->
   <lang english="Showing spleeter version" control="LoadStuff_textBox1">عرض نسخة مقياس</lang>
@@ -56,6 +58,5 @@
   <lang english="Unable get new version data, check internet connection" control="unable">تعذر الحصول على بيانات الإصدار الجديد ، تحقق من اتصال الإنترنت</lang>
   <lang english="Choose output location" control="set_output">اختر موقع الإخراج</lang>
   <lang english="Choose location of python.exe" control="set_python_path">اختر موقع python.exe</lang>
-  <lang english="Choose location of json config files" control="set_json_path">اختر موقع ملفات التكوين json</lang>
 
 </root>

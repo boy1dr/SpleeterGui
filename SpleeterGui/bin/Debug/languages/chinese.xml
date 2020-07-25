@@ -30,6 +30,8 @@
   <item english="Drop your music file(s) here to begin processing" control="lblDroptext">将您的音乐文件拖放到此处开始处理</item>
   <item english="Or select music file(s)" control="btnSelectFiles">或选择音乐文件</item>
   <item english="Progress" control="lblProgress">进度</item>
+  <item english="Maximum song length" control="lblMaxLength">最大歌曲长度</item>
+  <item english="seconds" control="lblSeconds">秒</item>
 
   <!-- program texts -->
   <lang english="Showing spleeter version" control="LoadStuff_textBox1">显示 spleeter 版本</lang>

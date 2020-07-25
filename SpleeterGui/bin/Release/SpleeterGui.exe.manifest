@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Fm/DrVSp+zRR06jDNqa+PQX93p9crBrTn6Kp+XWRcQc=</dsig:DigestValue>
+        <dsig:DigestValue>iumj4DoyUzEjSQwygH5HXng89D2yYGmsFR4W9W1R/8Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>7kLeOlx11QUsj72pV1m+2wBnLPwpQbvgoeK7ElkQ988=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="languages_source\chinese.xml" size="4444" writeableType="applicationData">
+  <file name="languages_source\chinese.xml" size="4340" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kTYeqLw0fCEMs5FOCCnfDEB7n4ATUmIJUT1jv0tmfnU=</dsig:DigestValue>
+      <dsig:DigestValue>Rr6QRd/vjWPm8HUqR9BfTAIcbTm3QBWYaV7ss6bSQPI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="languages_source\english.xml" size="5241" writeableType="applicationData">
@@ -99,13 +99,22 @@
       <dsig:DigestValue>6GAMWsIZ8/6sjbvRV1ruez/Xp3tkgHgD/Z/VolMimcw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="languages_source\italian.xml" size="4692" writeableType="applicationData">
+  <file name="languages_source\italian.xml" size="5517" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>QbaBQpNzIyhrBL1NPxwQApvXEJnpr6FqYreaLtgE06Q=</dsig:DigestValue>
+      <dsig:DigestValue>7Dua78VxndUWN5PKv65U1Pci9J4SppR+XNiI5XN6DEU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="languages_source\japanese.xml" size="5602" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sQCsbDwfFhl5Pf+SsHly/q+IMnEB+Y1Z2wrYN/D8NPI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="languages_source\russian.xml" size="6144" writeableType="applicationData">

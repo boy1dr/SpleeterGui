@@ -6,9 +6,9 @@
   <menu english="Exit" control="exitToolStripMenuItem">Sortie</menu>
   <menu english="Help" control="helpToolStripMenuItem">Aidez-moi</menu>
   <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Aidez-moi &amp; question</menu>
-  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">Vérifier la version GUI du spleeter</menu>
-  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Mise à niveau du noyau Spleeter</menu>
-  <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Page Github Spleeter</menu>
+  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">Vérifier la version de Spleeter GUI</menu>
+  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Mise à jour de Spleeter</menu>
+  <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Page Github de Spleeter</menu>
   <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Faites en sorte</menu>
   <menu english="Advanced" control="advancedToolStripMenuItem">Avancée</menu>
   <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Définir le chemin python</menu>
@@ -32,17 +32,19 @@
   <item english="Save to" control="btnSaveTo">Enregistrer dans</item>
   <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Déposez vos fichiers musicaux ici pour commencer le traitement</item>
   <item english="Or select music file(s)" control="btnSelectFiles">Ou sélectionnez un ou plusieurs fichiers musicaux</item>
-  <item english="Progress" control="lblProgress">Le progrès</item>
+  <item english="Progress" control="lblProgress">Progrès</item>
+  <item english="Maximum song length" control="lblMaxLength">Durée maximale de la chanson</item>
+  <item english="seconds" control="lblSeconds">secondes</item>
 
   <!-- program texts -->
-  <lang english="Showing spleeter version" control="LoadStuff_textBox1">Affichage de la version du spleeter</lang>
-  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Please select an output directory</lang>
+  <lang english="Showing spleeter version" control="LoadStuff_textBox1">Affichage de la version de Spleeter</lang>
+  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Veuillez sélectionner un répertoire de sortie</lang>
   <lang english="Starting" control="starting">Départ</lang>
   <lang english="Starting processing of all songs" control="starting_all">Démarrage du traitement de toutes les chansons</lang>
   <lang english="songs remaining" control="songs_remaining">chansons restantes</lang>
-  <lang english="Working" control="working">Travail</lang>
+  <lang english="Working" control="working">Au Travail</lang>
   <lang english="Processing" control="processing">En traitement</lang>
-  <lang english="idle" control="idle">tourner au ralenti</lang>
+  <lang english="idle" control="idle">Au repos</lang>
   <lang english="Finished processing all songs" control="finished">Traitement terminé de toutes les chansons</lang>
   <lang english="Run complete" control="run_complete">Exécution terminée</lang>
   <lang english="Vocal + Accompaniment" control="vocal_accompaniment">Accompagnement vocal +</lang>
@@ -57,5 +59,4 @@
   <lang english="Unable get new version data, check internet connection" control="unable">Impossible d'obtenir les nouvelles données de version, vérifiez la connexion Internet</lang>
   <lang english="Choose output location" control="set_output">Choisissez l'emplacement de sortie</lang>
   <lang english="Choose location of python.exe" control="set_python_path">Choisissez l'emplacement de python.exe</lang>
-  <lang english="Choose location of json config files" control="set_json_path">Choisissez l'emplacement des fichiers de configuration json</lang>
 </root>

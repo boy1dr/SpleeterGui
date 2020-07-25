@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SpleeterGui.exe.manifest" size="7468">
+    <dependentAssembly dependencyType="install" codebase="SpleeterGui.exe.manifest" size="7907">
       <assemblyIdentity name="SpleeterGui.exe" version="2.7.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tIkBROOdyo97SqVCi4gDI5wJBzQub6N8sdrbPQWfFKk=</dsig:DigestValue>
+        <dsig:DigestValue>K/wCjNxDOhsZw/lWmpCVVZVBz8tUIC9TGFN7IS2LAaE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
