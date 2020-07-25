@@ -30,8 +30,6 @@
   <item english="Drop your music file(s) here to begin processing" control="lblDroptext">将您的音乐文件拖放到此处开始处理</item>
   <item english="Or select music file(s)" control="btnSelectFiles">或选择音乐文件</item>
   <item english="Progress" control="lblProgress">进度</item>
-  <item english="Maximum song length" control="lblMaxLength">最大歌曲长度</item>
-  <item english="seconds" control="lblSeconds">秒</item>
 
   <!-- program texts -->
   <lang english="Showing spleeter version" control="LoadStuff_textBox1">显示 spleeter 版本</lang>
@@ -53,5 +51,4 @@
   <lang english="is available" control="is_available">可用</lang>
   <lang english="You are using the latest version" control="latest">您正在使用最新版本</lang>
   <lang english="Unable get new version data, check internet connection" control="unable">无法获取新版本数据，请检查互联网连接</lang>
-  <lang english="Choose location of python.exe" control="set_python_path">选择位置 python.exe</lang>
 </root>
