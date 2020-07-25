@@ -1,11 +1,9 @@
 # Spleeter_Gui
 Windows desktop front end for Spleeter - AI source separation  
   
-17/07/2020 Windows defender is currently identifying SpleeterGUI.exe as a threat.  
-Microsoft where nice enough to remove the detection after examination.  
-  
-  
 This project is a simple C# desktop front end for Spleeter.  
+  
+19/07/2020 Version 2.7 Updated help, set paths for python/ffmpeg (use your own python)  
  4/07/2020 Version 2.6 Recombine audio and multi-lingual update.  
 10/05/2020 Version 2.5 UI update, Additional help menu items for version check and spleeter core ugrade, Display installed spleeter version on startup  
  4/05/2020 Version 2.4 Bug fix: "full bandwidth" mode checked but not enabled by default.  
@@ -13,7 +11,7 @@ This project is a simple C# desktop front end for Spleeter.
 24/12/2019 Version 2.2 New windows MSI installer. Drag and drop processing.  
 21/12/2019 Version 2.0 update. Interface update, added Batch processing.  
 17/12/2019 Version 1.1 update. Added High quality/expert mode.  
-
+  
 Latest installer can be donwloaded from here https://makenweb.com/#spleetergui  
 
 Older versions...  
@@ -40,7 +38,4 @@ The project contains the C# source code for the Graphical User Interface. It als
 The aim for this project was to make it easy for Windows users to download and run Spleeter without needing to use the command line tools to do so.  
 
 
-Feel free to inspect the source code and build for yourself. you can also install your own python/tensorflow/ffmpeg/spleeter, just delete the python directory in the bin/debug folder and follow the guide on the spleeter link below.  
-
-For more information on the spleeter project please visit https://github.com/deezer/spleeter  
-
+Feel free to inspect the source code and build for yourself. you can also install your own python/tensorflow/ffmpeg/spleeter.
