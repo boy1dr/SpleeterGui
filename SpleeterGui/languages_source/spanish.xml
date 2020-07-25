@@ -10,6 +10,9 @@
   <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Actualización principal de Spleeter</menu>
   <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Página de github de Spleeter</menu>
   <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Hazlo así</menu>
+  <menu english="Advanced" control="advancedToolStripMenuItem">Avanzada</menu>
+  <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Establecer ruta de Python</menu>
+  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Establecer ruta de configuración json</menu>
 
   <!-- form controls -->
   <item english="Music source separation" control="lblSlogan1">Separación de fuente de música</item>
@@ -30,6 +33,8 @@
   <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Suelta tus archivos de música aquí para comenzar a procesar</item>
   <item english="Or select music file(s)" control="btnSelectFiles">O seleccione archivos de música</item>
   <item english="Progress" control="lblProgress">Progreso</item>
+  <item english="Maximum song length" control="lblMaxLength">Longitud máxima de la canción</item>
+  <item english="seconds" control="lblSeconds">segundos</item>
 
   <!-- program texts -->
   <lang english="Showing spleeter version" control="LoadStuff_textBox1">Mostrando la versión esplendorosa</lang>
@@ -52,5 +57,7 @@
   <lang english="is available" control="is_available">está disponible</lang>
   <lang english="You are using the latest version" control="latest">Estás usando la última versión</lang>
   <lang english="Unable get new version data, check internet connection" control="unable">No se pueden obtener datos de la nueva versión, verifique la conexión a Internet</lang>
+  <lang english="Choose output location" control="set_output">Elegir ubicación de salida</lang>
+  <lang english="Choose location of python.exe" control="set_python_path">Elija la ubicación de python.exe</lang>
 
 </root>

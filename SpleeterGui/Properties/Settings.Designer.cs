@@ -46,5 +46,29 @@ namespace SpleeterGui.Properties {
                 this["language"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string path_python {
+            get {
+                return ((string)(this["path_python"]));
+            }
+            set {
+                this["path_python"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("600")]
+        public int duration {
+            get {
+                return ((int)(this["duration"]));
+            }
+            set {
+                this["duration"] = value;
+            }
+        }
     }
 }

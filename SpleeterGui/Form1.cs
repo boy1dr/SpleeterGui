@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+
 using System.Net;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -26,15 +27,16 @@ namespace SpleeterGui
         private string stem_count = "2";
         private string mask_extension = "average";
         private string storage = "";
+
+        private string path_python = "";
+        
         private string current_songname = "";
         private int files_remain = 0;
         private List<string> files_to_process = new List<string>();
         private Boolean run_silent = true;
         private String gui_version = "";
         IDictionary<string, string> langStr = new Dictionary<string, string>();
-
-
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -60,12 +62,24 @@ namespace SpleeterGui
             gui_version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             String version = Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString();
             this.Text = "SpleeterGUI " + version;
+
+            path_python = Properties.Settings.Default.path_python;
             
+
+            if (path_python == "")
+            {
+                path_python = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI\python";
+            }
+
+            duration.Value = Properties.Settings.Default.duration;
+
             update_checks();
             get_languages();
             update_language(Properties.Settings.Default.language);
 
-            textBox1.Text = langStr["LoadStuff_textBox1"] + "...\r\n";
+            string txt = langStr["LoadStuff_textBox1"];
+            txt = txt.Replace("[NL]", "\r\n");
+            textBox1.Text = txt + "...\r\n";
             run_cmd("pip show spleeter");
         }
 
@@ -99,7 +113,7 @@ namespace SpleeterGui
 
         private void LanguageItemClickHandler(object sender, EventArgs e)
         {
-            //a lanbguage is chosen by the user, load it up
+            //a language is chosen by the user, load it up
             ToolStripMenuItem clickedItem = (ToolStripMenuItem)sender;
             update_language(clickedItem.Tag.ToString());
         }
@@ -200,15 +214,17 @@ namespace SpleeterGui
             if (files_remain > 0)
             {
                 run_silent = false;
-                string pyPath = storage + @"\python\python.exe";
+                //string pyPath = storage + @"\python\python.exe";
+                string pyPath = path_python + @"\python.exe";
+                
                 string filename = files_to_process[0];
                 
                 progressBar1.Value = progressBar1.Value + 1;
                 System.IO.File.WriteAllText(storage + @"\config.json", get_config_string());
                 textBox1.AppendText(langStr["processing"] + " " + filename + "\r\n");
                 progress_txt.Text = langStr["working"] + "..." + files_remain + " "+ langStr["songs_remaining"];
-                
-                ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m spleeter separate -i " + (char)34 + filename + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -p " + (char)34 + storage + @"\config.json" + (char)34);
+
+                ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m spleeter separate -i " + (char)34 + filename + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -d "+ (duration.Value).ToString()  + " -p " + (char)34 + storage + @"\config.json" + (char)34);
                 processStartInfo.WorkingDirectory = storage;
 
                 processStartInfo.UseShellExecute = false;
@@ -225,11 +241,18 @@ namespace SpleeterGui
                 process.Exited += new EventHandler(ProcessExited);
                 process.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
                 process.ErrorDataReceived += new DataReceivedEventHandler(ErrorHandler);
-                bool processStarted = process.Start();
-                process.BeginOutputReadLine();
-                process.BeginErrorReadLine();
+                try
+                {
+                    bool processStarted = process.Start();
+                    process.BeginOutputReadLine();
+                    process.BeginErrorReadLine();
 
-                current_songname = Path.GetFileNameWithoutExtension(filename);
+                    current_songname = Path.GetFileNameWithoutExtension(filename);
+                }
+                catch
+                {
+                    MessageBox.Show("Error: unable to find python.exe");
+                }
             }
             else
             {
@@ -244,24 +267,34 @@ namespace SpleeterGui
         private void run_cmd(String cmd)
         {
             //general function for executing python commands.
-            string pyPath = storage + @"\python\python.exe";
-            ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m " + cmd);
-            processStartInfo.WorkingDirectory = storage;
+            try
+            {
+                ProcessStartInfo processStartInfo;
+                string pyPath = path_python + @"\python.exe";
 
-            processStartInfo.UseShellExecute = false;
-            processStartInfo.ErrorDialog = false;
-            processStartInfo.RedirectStandardOutput = true;
-            processStartInfo.RedirectStandardError = true;
-            processStartInfo.CreateNoWindow = true;
-            Process process = new Process();
-            process.StartInfo = processStartInfo;
-            process.EnableRaisingEvents = true;
-            process.Exited += new EventHandler(ProcessExited);
-            process.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
-            process.ErrorDataReceived += new DataReceivedEventHandler(ErrorHandler);
-            bool processStarted = process.Start();
-            process.BeginOutputReadLine();
-            process.BeginErrorReadLine();
+                processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m " + cmd);
+                processStartInfo.WorkingDirectory = storage;
+
+                processStartInfo.UseShellExecute = false;
+                processStartInfo.ErrorDialog = false;
+                processStartInfo.RedirectStandardOutput = true;
+                processStartInfo.RedirectStandardError = true;
+                processStartInfo.CreateNoWindow = true;
+                Process process = new Process();
+                process.StartInfo = processStartInfo;
+                process.EnableRaisingEvents = true;
+                process.Exited += new EventHandler(ProcessExited);
+                process.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
+                process.ErrorDataReceived += new DataReceivedEventHandler(ErrorHandler);
+
+                bool processStarted = process.Start();
+                process.BeginOutputReadLine();
+                process.BeginErrorReadLine();
+            }
+            catch
+            {
+                MessageBox.Show("Unable to find python.exe");
+            }
         }
         private void run_recombine(String args)
         {
@@ -286,16 +319,33 @@ namespace SpleeterGui
         }
         void OutputHandler(object sender, DataReceivedEventArgs e)
         {
-            //cleanup function called by run_cmd
+            //output handler called by run_cmd
             this.BeginInvoke(new MethodInvoker(() =>
             {
                 if (!String.IsNullOrEmpty(e.Data))
                 {
-                    textBox1.AppendText(e.Data.TrimEnd('\r', '\n') + "\r\n");
+                    if (txt_check(e.Data))   //Please don't email Deezer about problems with this GUI app.
+                    {
+                        textBox1.AppendText(e.Data.TrimEnd('\r', '\n') + "\r\n");
+                    }
                 }
             }));
         }
-
+        bool txt_check(string txt)  //prevent output
+        {
+            bool allow = true;
+            if (txt.IndexOf("Author-email") !=-1){ allow = false; }
+            if (txt.IndexOf("Summary:") != -1) { allow = false; }
+            if (txt.IndexOf("source separation library") != -1) { allow = false; }
+            if (txt.IndexOf("models based on") != -1) { allow = false; }
+            if (txt.IndexOf("Home-page:") != -1) { allow = false; }
+            if (txt.IndexOf("Author:") != -1) { allow = false; }
+            if (txt.IndexOf("License:") != -1) { allow = false; }
+            if (txt.IndexOf("Location:") != -1) { allow = false; }
+            if (txt.IndexOf("Requires:") != -1) { allow = false; }
+            if (txt.IndexOf("Required-by:") != -1) { allow = false; }
+            return allow;
+        }
         void ErrorHandler(object sender, DataReceivedEventArgs e)
         {
             //handles errors from the run_cmd functions
@@ -372,6 +422,8 @@ namespace SpleeterGui
         {
             //prompt user for output folder
             var folderBrowserDialog1 = new FolderBrowserDialog();
+            folderBrowserDialog1.ShowNewFolderButton = true;
+            folderBrowserDialog1.Description = langStr["set_output"];
             DialogResult result = folderBrowserDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
@@ -384,6 +436,22 @@ namespace SpleeterGui
                 txt_output_directory.Text = "";
             }
         }
+        private void setPythonPathToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //prompt user for python path
+            var folderBrowserDialog1 = new FolderBrowserDialog();
+            folderBrowserDialog1.SelectedPath = path_python;
+            folderBrowserDialog1.Description = langStr["set_python_path"];
+            folderBrowserDialog1.ShowNewFolderButton = false;
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                path_python = folderBrowserDialog1.SelectedPath;
+                Properties.Settings.Default.path_python = path_python;
+                Properties.Settings.Default.Save();
+                LoadStuff();
+            }
+        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -393,7 +461,8 @@ namespace SpleeterGui
         private string get_config_string()
         {
             //reads the JSON config file for the current stem mode
-            string readText = File.ReadAllText(storage + @"\" + stem_count + "stems.json");
+            var enviroment = System.Environment.CurrentDirectory;
+            string readText = File.ReadAllText(enviroment + @"\configs\" + stem_count + "stems.json");
             if (mask_extension == "average")
             {
                 readText = readText.Replace("zeros", "average");
@@ -409,8 +478,8 @@ namespace SpleeterGui
 
         private void spleeterGithubPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //help - opens deezer's github page in a browser window
-            System.Diagnostics.Process.Start("https://github.com/deezer/spleeter");
+            //help - opens SpleeterGUI github page in a browser window
+            System.Diagnostics.Process.Start("https://github.com/boy1dr/SpleeterGui");
         }
 
         private void makenItSoToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -608,6 +677,12 @@ namespace SpleeterGui
                         break;
                 }
             }
+        }
+
+        private void duration_ValueChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.duration = Convert.ToInt32(duration.Value);
+            Properties.Settings.Default.Save();
         }
     }
 }

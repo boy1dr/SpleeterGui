@@ -10,6 +10,9 @@
   <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Mise à niveau du noyau Spleeter</menu>
   <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Page Github Spleeter</menu>
   <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Faites en sorte</menu>
+  <menu english="Advanced" control="advancedToolStripMenuItem">Avancée</menu>
+  <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Définir le chemin python</menu>
+  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Définir le chemin de configuration json</menu>
 
   <!-- form controls -->
   <item english="Music source separation" control="lblSlogan1">Séparation des sources de musique</item>
@@ -52,4 +55,7 @@
   <lang english="is available" control="is_available">est disponible</lang>
   <lang english="You are using the latest version" control="latest">Vous utilisez la dernière version</lang>
   <lang english="Unable get new version data, check internet connection" control="unable">Impossible d'obtenir les nouvelles données de version, vérifiez la connexion Internet</lang>
+  <lang english="Choose output location" control="set_output">Choisissez l'emplacement de sortie</lang>
+  <lang english="Choose location of python.exe" control="set_python_path">Choisissez l'emplacement de python.exe</lang>
+  <lang english="Choose location of json config files" control="set_json_path">Choisissez l'emplacement des fichiers de configuration json</lang>
 </root>

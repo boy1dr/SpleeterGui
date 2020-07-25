@@ -32,3 +32,7 @@ C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.ex
 C:\Users\brady\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.pdb
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csproj.CoreCompileInputs.cache
 C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.csprojAssemblyReference.cache
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.exe.manifest
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\bin\Debug\SpleeterGui.application
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.exe.manifest
+C:\Users\chris\Documents\GitHub\SpleeterGui\SpleeterGui\obj\Debug\SpleeterGui.application

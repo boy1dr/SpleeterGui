@@ -10,6 +10,9 @@
   <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">ترقية النواة الأساسية</menu>
   <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">صفحة جيليت spleeter</menu>
   <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+  <menu english="Advanced" control="advancedToolStripMenuItem">المتقدمة</menu>
+  <menu english="Set python path" control="setPythonPathToolStripMenuItem1">تعيين مسار الثعبان</menu>
+  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">تعيين مسار تكوينات json</menu>
 
   <!-- form controls -->
   <item english="Music source separation" control="lblSlogan1">فصل مصدر الموسيقى</item>
@@ -51,5 +54,8 @@
   <lang english="is available" control="is_available">متاح</lang>
   <lang english="You are using the latest version" control="latest">أنت تستخدم أحدث إصدار</lang>
   <lang english="Unable get new version data, check internet connection" control="unable">تعذر الحصول على بيانات الإصدار الجديد ، تحقق من اتصال الإنترنت</lang>
+  <lang english="Choose output location" control="set_output">اختر موقع الإخراج</lang>
+  <lang english="Choose location of python.exe" control="set_python_path">اختر موقع python.exe</lang>
+  <lang english="Choose location of json config files" control="set_json_path">اختر موقع ملفات التكوين json</lang>
 
 </root>

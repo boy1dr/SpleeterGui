@@ -8,10 +8,14 @@
     <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Help &amp; FAQ</menu>
     <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">Check spleeterGUI version</menu>
     <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter core upgrade</menu>
-    <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Spleeter github page</menu>
+    <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI github page</menu>
     <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+    <menu english="Advanced" control="advancedToolStripMenuItem">Advanced</menu>
+    <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Set python path</menu>
+    <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Set json configs path</menu>
 
-    <!-- form controls -->
+  
+  <!-- form controls -->
     <item english="Music source separation" control="lblSlogan1">Music source separation</item>
     <item english="Windows desktop bundle" control="lblSlogan2">Windows desktop bundle</item>
     <item english="Parts to separate" control="lblPartsTitle">Parts to separate</item>
@@ -30,9 +34,12 @@
     <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Drop your music file(s) here to begin processing</item>
     <item english="Or select music file(s)" control="btnSelectFiles">Or select music file(s)</item>
     <item english="Progress" control="lblProgress">Progress</item>
+    <item english="Maximum song length" control="lblMaxLength">Maximum song length</item>
+    <item english="seconds" control="lblSeconds">seconds</item>
+  
 
     <!-- program texts -->
-    <lang english="Showing spleeter version" control="LoadStuff_textBox1">Showing spleeter version</lang>
+    <lang english="Showing spleeter version" control="LoadStuff_textBox1">Help: https://makenweb.com/spleeter_help.php[NL]Issues: https://github.com/boy1dr/SpleeterGui/issues[NL][NL]Showing spleeter version</lang>
     <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Please select an output directory</lang>
     <lang english="Starting" control="starting">Starting</lang>
     <lang english="Starting processing of all songs" control="starting_all">Starting processing of all songs</lang>
@@ -52,4 +59,6 @@
     <lang english="is available" control="is_available">is available</lang>
     <lang english="You are using the latest version" control="latest">You are using the latest version</lang>
     <lang english="Unable get new version data, check internet connection" control="unable">Unable get new version data, check internet connection</lang>
+    <lang english="Choose output location" control="set_output">Choose output location</lang>
+    <lang english="Choose location of python.exe" control="set_python_path">Choose location of python.exe</lang>
 </root>
