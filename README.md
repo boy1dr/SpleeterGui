@@ -2,6 +2,11 @@
 Windows desktop front end for Spleeter - AI source separation  
   
 This project is a simple C# desktop front end for Spleeter.  
+
+27/07/2020 - MS Defender is falsely identifying V2.7 as a trojan. The exe has been submitted to microsoft and given the all clear.  
+             Defender definition version 1.319.2309.0 finds no threat
+	     More details can be found here https://github.com/boy1dr/SpleeterGui/issues/36
+
   
 19/07/2020 Version 2.7 Updated help, set paths for python/ffmpeg (use your own python)  
  4/07/2020 Version 2.6 Recombine audio and multi-lingual update.  
