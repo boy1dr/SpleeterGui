@@ -7,6 +7,7 @@ This project is a simple C# desktop front end for Spleeter.
              Defender definition version 1.319.2309.0 finds no threat
 	     More details can be found here https://github.com/boy1dr/SpleeterGui/issues/36
 
+Please consider donating and help pay for hosting and development paypal.me/makenitso  
   
 19/07/2020 Version 2.7 Updated help, set paths for python/ffmpeg (use your own python)  
  4/07/2020 Version 2.6 Recombine audio and multi-lingual update.  
