@@ -15,7 +15,7 @@ Please consider donating and help pay for hosting and development paypal.me/make
 	     More details can be found here https://github.com/boy1dr/SpleeterGui/issues/36
 
 | Date | Version | Notes |
-| ---- |:-------:| ----- |
+| ----: |:-------:| ----- |
 | 19/07/2020 | 2.7 | Updated help, set paths for python/ffmpeg (use your own python) |
 | 4/07/2020 | 2.6 | Recombine audio and multi-lingual update. |
 | 10/05/2020 | 2.5 | UI update, Additional help menu items for version check and spleeter core ugrade, Display installed spleeter version on startup |
