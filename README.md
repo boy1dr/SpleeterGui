@@ -5,6 +5,8 @@ Windows desktop front end for Spleeter - AI source separation
 Latest installer can be downloaded from here https://makenweb.com/#spleetergui  
 No need to install python or spleeter, this app contains a portable version of python.  
 
+The aim for this project is to make it easy for Windows users to download and run Spleeter without needing to use the command line tools to do so.  
+
 ![SpleeterGUI_app](/Spleeter_GUI.png)  
 
 This project is a simple C# desktop front end for Spleeter.  
@@ -17,6 +19,7 @@ Please consider donating and help pay for hosting and development paypal.me/make
 
 | Date | Version | Notes |
 | ----: |:-------:| ----- |
+| 31/07/2020 | 2.8 | Upgraded the project to 64bit. |
 | 19/07/2020 | 2.7 | Updated help, set paths for python/ffmpeg (use your own python) |
 | 4/07/2020 | 2.6 | Recombine audio and multi-lingual update. |
 | 10/05/2020 | 2.5 | UI update, Additional help menu items for version check and spleeter core upgrade, Display installed spleeter version on startup |
@@ -41,7 +44,5 @@ https://www.youtube.com/watch?v=9KkWJHC2bz0
 https://www.youtube.com/watch?v=Mygm1sFlQXc  
 
 The project contains the C# source code for the Graphical User Interface. It also contains Python3.7 and the Spleeter project.  
-The aim for this project was to make it easy for Windows users to download and run Spleeter without needing to use the command line tools to do so.  
-
 
 Feel free to inspect the source code and build for yourself. you can also install your own python/tensorflow/ffmpeg/spleeter.
