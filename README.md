@@ -5,7 +5,7 @@ Windows desktop front end for Spleeter - AI source separation
 Latest installer can be downloaded from here https://makenweb.com/#spleetergui  
 No need to install python or spleeter, this app contains a portable version of python.  
 
-![SpleeterGUI_app](/SpleeterGui.png)  
+![SpleeterGUI_app](/SpleeterGUI.png)  
 
 This project is a simple C# desktop front end for Spleeter.  
 Please consider donating and help pay for hosting and development paypal.me/makenitso  
