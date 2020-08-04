@@ -2,7 +2,7 @@
 Windows desktop front end for Spleeter - AI source separation  
    
 
-Latest installer can be donwloaded from here https://makenweb.com/#spleetergui  
+Latest installer can be downloaded from here https://makenweb.com/#spleetergui  
 No need to install python or spleeter, this app contains a portable version of python.  
 
 
@@ -10,7 +10,7 @@ This project is a simple C# desktop front end for Spleeter.
 Please consider donating and help pay for hosting and development paypal.me/makenitso  
 
 ## Version history  
-27/07/2020 - MS Defender is falsely identifying V2.7 as a trojan. The exe has been submitted to microsoft and given the all clear.  
+27/07/2020 - MS Defender is falsely identifying V2.7 as a trojan. The exe has been submitted to Microsoft and given the all clear.  
              Defender definition version 1.319.2309.0 finds no threat
 	     More details can be found here https://github.com/boy1dr/SpleeterGui/issues/36
 
@@ -18,9 +18,9 @@ Please consider donating and help pay for hosting and development paypal.me/make
 | ----: |:-------:| ----- |
 | 19/07/2020 | 2.7 | Updated help, set paths for python/ffmpeg (use your own python) |
 | 4/07/2020 | 2.6 | Recombine audio and multi-lingual update. |
-| 10/05/2020 | 2.5 | UI update, Additional help menu items for version check and spleeter core ugrade, Display installed spleeter version on startup |
+| 10/05/2020 | 2.5 | UI update, Additional help menu items for version check and spleeter core upgrade, Display installed spleeter version on startup |
 | 4/05/2020 | 2.4 | Bug fix: "full bandwidth" mode checked but not enabled by default. |
-| 27/12/2019 | 2.3 | Accessibility update (process button, tab order, access labels and descriptions, ding on complete etc) |
+| 27/12/2019 | 2.3 | Accessibility update (process button, tab order, access labels and descriptions, ding on complete etc.) |
 | 24/12/2019 | 2.2 | New windows MSI installer. Drag and drop processing. |
 | 21/12/2019 | 2.0 | Interface update, added Batch processing. |
 | 17/12/2019 | 1.1 | Added High quality/expert mode. |
