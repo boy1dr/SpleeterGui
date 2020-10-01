@@ -1,5 +1,5 @@
 ## SpleeterGUI - Music source separation desktop app  
-Windows desktop front end for Spleeter - AI source separation  
+Windows Desktop Front end for Spleeter - AI source separation  
    
 
 Latest installer can be downloaded from here https://makenweb.com/#spleetergui  
