@@ -17,9 +17,6 @@ using System.Web.Script.Serialization;
 using System.Windows.Forms;
 using System.Xml;
 
-// 2019 Maken it so.
-// https://www.youtube.com/c/makenitso
-
 namespace SpleeterGui
 {
     public partial class Form1 : Form
@@ -28,7 +25,7 @@ namespace SpleeterGui
         private string mask_extension = "average";
         private string storage = "";
 
-        private string path_python = "";
+        private string path_python = "";    //needs to be the SpleeterGUI folder, not python
         
         private string current_songname = "";
         private int files_remain = 0;
@@ -58,18 +55,25 @@ namespace SpleeterGui
         {
             //program startup - initialise things
             txt_output_directory.Text = Properties.Settings.Default.output_location;
-            storage = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI";
+
+            if (Properties.Settings.Default.path_python == "")
+            {
+                path_python = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI\python";
+                storage = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI";
+            }
+            else
+            {
+                path_python = Properties.Settings.Default.path_python + @"\python";
+                storage = Properties.Settings.Default.path_python;
+            }
+
+            
             gui_version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             String version = Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString();
             this.Text = "SpleeterGUI " + version;
 
-            path_python = Properties.Settings.Default.path_python;
             
-
-            if (path_python == "")
-            {
-                path_python = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI\python";
-            }
+           
 
             duration.Value = Properties.Settings.Default.duration;
 
@@ -440,7 +444,7 @@ namespace SpleeterGui
         {
             //prompt user for python path
             var folderBrowserDialog1 = new FolderBrowserDialog();
-            folderBrowserDialog1.SelectedPath = path_python;
+            folderBrowserDialog1.SelectedPath = storage;
             folderBrowserDialog1.Description = langStr["set_python_path"];
             folderBrowserDialog1.ShowNewFolderButton = false;
             DialogResult result = folderBrowserDialog1.ShowDialog();

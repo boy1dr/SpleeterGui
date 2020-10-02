@@ -11,7 +11,7 @@
     <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI github page</menu>
     <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
     <menu english="Advanced" control="advancedToolStripMenuItem">Advanced</menu>
-    <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Set python path</menu>
+    <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Set SpleeterGUI path</menu>
     <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Set json configs path</menu>
 
   
