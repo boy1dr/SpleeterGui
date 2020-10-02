@@ -228,6 +228,7 @@ namespace SpleeterGui
             this.txt_output_directory.AccessibleName = "output directory display";
             this.txt_output_directory.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
             this.txt_output_directory.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.txt_output_directory.ForeColor = System.Drawing.Color.Black;
             this.txt_output_directory.Location = new System.Drawing.Point(118, 67);
             this.txt_output_directory.Name = "txt_output_directory";
             this.txt_output_directory.Size = new System.Drawing.Size(364, 22);
@@ -258,7 +259,7 @@ namespace SpleeterGui
             this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.textBox1.Location = new System.Drawing.Point(4, 208);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -293,6 +294,7 @@ namespace SpleeterGui
             this.progressBar1.AccessibleDescription = "Shows overall process completion";
             this.progressBar1.AccessibleName = "Progress Bar";
             this.progressBar1.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
+            this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.progressBar1.Location = new System.Drawing.Point(4, 185);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(491, 17);
@@ -371,6 +373,7 @@ namespace SpleeterGui
             this.parts_label.AccessibleName = "parts description";
             this.parts_label.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
             this.parts_label.AutoSize = true;
+            this.parts_label.ForeColor = System.Drawing.Color.Black;
             this.parts_label.Location = new System.Drawing.Point(293, 135);
             this.parts_label.Name = "parts_label";
             this.parts_label.Size = new System.Drawing.Size(122, 13);
@@ -478,6 +481,7 @@ namespace SpleeterGui
             // chkRecombine
             // 
             this.chkRecombine.AutoSize = true;
+            this.chkRecombine.ForeColor = System.Drawing.Color.Black;
             this.chkRecombine.Location = new System.Drawing.Point(3, 3);
             this.chkRecombine.Name = "chkRecombine";
             this.chkRecombine.Size = new System.Drawing.Size(247, 17);
