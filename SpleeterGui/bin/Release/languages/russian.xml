@@ -8,10 +8,10 @@
   <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Помогите &amp; вопрос</menu>
   <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">Проверьте spleeterGUI версию</menu>
   <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Обновление ядра Spleeter</menu>
-  <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Spleeter Github страница</menu>
+  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">Spleeter Github страница</menu>
   <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
   <menu english="Advanced" control="advancedToolStripMenuItem">продвинутый</menu>
-  <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Установить путь к питону</menu>
+  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">Установить путь к SpleeterGUI</menu>
   <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Установить путь к конфигам json</menu>
 
   <!-- form controls -->

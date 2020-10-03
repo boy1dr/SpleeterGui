@@ -8,8 +8,11 @@
   <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">帮助及常见问题</menu>
   <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">检查 spleeterGUI 版本</menu>
   <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter 核心升级</menu>
-  <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Spleeter github 页面</menu>
+  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">Spleeter github 页面</menu>
   <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+  <menu english="Advanced" control="advancedToolStripMenuItem">高級</menu>
+  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">設置SpleeterGUI路徑</menu>
+  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">設置json配置路徑</menu>
 
   <!-- form controls -->
   <item english="Music source separation" control="lblSlogan1">音乐源分离</item>

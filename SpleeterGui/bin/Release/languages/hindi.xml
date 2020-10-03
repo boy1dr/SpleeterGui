@@ -8,10 +8,10 @@
   <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">मदद &amp; सवाल</menu>
   <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SpleeterGUI संस्करण की जाँच करें</menu>
   <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter कोर उन्नयन</menu>
-  <menu english="spleeter github page" control="spleeterGithubPageToolStripMenuItem">Spleeter जीथब पृष्ठ</menu>
+  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">Spleeter जीथब पृष्ठ</menu>
   <menu english="Maken it so" control="makenItSoToolStripMenuItem1">माकन ने ऐसा किया</menu>
   <menu english="Advanced" control="advancedToolStripMenuItem">उन्नत</menu>
-  <menu english="Set python path" control="setPythonPathToolStripMenuItem1">अजगर पैट सेट करेंh</menu>
+  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUI पथ सेट करें</menu>
   <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Json config पथ सेट करें</menu>
 
   <!-- form controls -->

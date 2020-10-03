@@ -11,7 +11,7 @@
   <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI githubページ</menu>
   <menu english="Maken it so" control="makenItSoToolStripMenuItem1">そうする</menu>
   <menu english="Advanced" control="advancedToolStripMenuItem">高度な</menu>
-  <menu english="Set python path" control="setPythonPathToolStripMenuItem1">Pythonパスを設定する</menu>
+  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUIパスを設定します</menu>
   <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">json設定パスを設定する</menu>
 
 
