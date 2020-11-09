@@ -1,59 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <root>
-  <language english="chinese" control="">中文</language>
-  <!-- menu items -->
-  <menu english="File" control="fileToolStripMenuItem">文件</menu>
-  <menu english="Exit" control="exitToolStripMenuItem">退出</menu>
-  <menu english="Help" control="helpToolStripMenuItem">帮助</menu>
-  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">帮助及常见问题</menu>
-  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">检查 spleeterGUI 版本</menu>
-  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter 核心升级</menu>
-  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">Spleeter github 页面</menu>
-  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
-  <menu english="Advanced" control="advancedToolStripMenuItem">高級</menu>
-  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">設置SpleeterGUI路徑</menu>
-  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">設置json配置路徑</menu>
+    <language english="tchinese" control="">正體中文</language>
+    <!-- menu items -->
+    <menu english="File" control="fileToolStripMenuItem">檔案</menu>
+    <menu english="Exit" control="exitToolStripMenuItem">關閉</menu>
+    <menu english="Help" control="helpToolStripMenuItem">說明</menu>
+    <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">說明及常見問題</menu>
+    <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">檢查 spleeterGUI 版本</menu>
+    <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">更新 Spleeter 核心</menu>
+    <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI github 頁面</menu>
+    <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+    <menu english="Advanced" control="advancedToolStripMenuItem">進階設定</menu>
+    <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">設定 SpleeterGUI 路徑</menu>
+    <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">設定 json 設定檔路徑</menu>
 
   <!-- form controls -->
-  <item english="Music source separation" control="lblSlogan1">音乐源分离</item>
-  <item english="Windows desktop bundle" control="lblSlogan2">Windows 桌面捆绑</item>
-  <item english="Parts to separate" control="lblPartsTitle">按几部分分离</item>
-  <item english="2" control="parts_btn2">2</item>
-  <item english="Vocal + Accompaniment" control="parts_label">人声 + 伴奏</item>
-  <item english="4" control="parts_btn4">4</item>
-  <item english="5" control="parts_btn5">5</item>
-  <item english="Recombine (Merge output parts back together)" control="chkRecombine">重组（将输出的部分再合并到一起）</item>
-  <item english="Vocal" control="chkRPartVocal">人声</item>
-  <item english="Bass" control="chkRPartBass">贝斯</item>
-  <item english="Drums" control="chkRPartDrums">鼓</item>
-  <item english="Piano" control="chkRPartPiano">钢琴</item>
-  <item english="Other" control="chkRPartOther">其他</item>
-  <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">全带宽（16Khz高质量）</item>
-  <item english="Save to" control="btnSaveTo">保存到</item>
-  <item english="Drop your music file(s) here to begin processing" control="lblDroptext">将您的音乐文件拖放到此处开始处理</item>
-  <item english="Or select music file(s)" control="btnSelectFiles">或选择音乐文件</item>
-  <item english="Progress" control="lblProgress">进度</item>
-  <item english="Maximum song length" control="lblMaxLength">最大歌曲长度</item>
-  <item english="seconds" control="lblSeconds">秒</item>
+    <item english="Music source separation" control="lblSlogan1">Music source separation</item>
+    <item english="Windows desktop bundle" control="lblSlogan2">Windows desktop bundle</item>
+    <item english="Parts to separate" control="lblPartsTitle">分離聲部</item>
+    <item english="2" control="parts_btn2">2</item>
+    <item english="Vocal + Accompaniment" control="parts_label">人聲 + 伴奏</item>
+    <item english="4" control="parts_btn4">4</item>
+    <item english="5" control="parts_btn5">5</item>
+    <item english="Recombine (Merge output parts back together)" control="chkRecombine">重組（將分離的音軌再次合併）</item>
+    <item english="Vocal" control="chkRPartVocal">人聲</item>
+    <item english="Bass" control="chkRPartBass">低音聲部</item>
+    <item english="Drums" control="chkRPartDrums">鼓組</item>
+    <item english="Piano" control="chkRPartPiano">鋼琴</item>
+    <item english="Other" control="chkRPartOther">其他</item>
+    <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">全頻寬（16Khz 高音質）</item>
+    <item english="Save to" control="btnSaveTo">儲存至</item>
+    <item english="Drop your music file(s) here to begin processing" control="lblDroptext">將音樂檔案拖放至此處開始處理</item>
+    <item english="Or select music file(s)" control="btnSelectFiles">或選擇音樂檔案</item>
+    <item english="Progress" control="lblProgress">進度</item>
+    <item english="Maximum song length" control="lblMaxLength">最大歌曲長度</item>
+    <item english="seconds" control="lblSeconds">秒</item>
 
-  <!-- program texts -->
-  <lang english="Showing spleeter version" control="LoadStuff_textBox1">显示 spleeter 版本</lang>
-  <lang english="Starting" control="starting">开始</lang>
-  <lang english="Starting processing of all songs" control="starting_all">开始处理所有歌曲</lang>
-  <lang english="songs remaining" control="songs_remaining">歌曲剩余</lang>
-  <lang english="Working" control="working">工作中</lang>
-  <lang english="Processing" control="processing">处理中</lang>
-  <lang english="idle" control="idle">空闲</lang>
-  <lang english="Finished processing all songs" control="finished">完成处理所有歌曲</lang>
-  <lang english="Run complete" control="run_complete">运行完成</lang>
-  <lang english="Vocal + Accompaniment" control="vocal_accompaniment">人声 + 伴奏</lang>
-  <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">人声 + 贝斯 + 鼓 + 其他</lang>
-  <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">人声 + 贝斯 + 鼓 + 钢琴 + 其他</lang>
-  <lang english="Please select an output directory" control="output_message">请选择一个输出目录</lang>
-  <lang english="Running update command" control="run_update">运行更新命令</lang>
-  <lang english="This might take a while, wait for the beep" control="run_update_b">这可能需要一段时间，请等待哔哔声</lang>
-  <lang english="Version" control="version">版本</lang>
-  <lang english="is available" control="is_available">可用</lang>
-  <lang english="You are using the latest version" control="latest">您正在使用最新版本</lang>
-  <lang english="Unable get new version data, check internet connection" control="unable">无法获取新版本数据，请检查互联网连接</lang>
+    <!-- program texts -->
+    <lang english="Showing spleeter version" control="LoadStuff_textBox1">說明：https://makenweb.com/spleeter_help.php[NL]問題：https://github.com/boy1dr/SpleeterGui/issues[NL][NL]顯示 spleeter 版本</lang>
+    <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">請指定儲存路徑</lang>
+    <lang english="Starting" control="starting">開始</lang>
+    <lang english="Starting processing of all songs" control="starting_all">開始處理所有歌曲</lang>
+    <lang english="songs remaining" control="songs_remaining">個待處理檔案</lang>
+    <lang english="Working" control="working">執行中</lang>
+    <lang english="Processing" control="processing">處理中</lang>
+    <lang english="idle" control="idle">閒置中</lang>
+    <lang english="Finished processing all songs" control="finished">結束處理所有歌曲</lang>
+    <lang english="Run complete" control="run_complete">執行完畢</lang>
+    <lang english="Vocal + Accompaniment" control="vocal_accompaniment">人聲 + 伴奏</lang>
+    <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">人聲 + 低音聲部 + 鼓組 + 其他</lang>
+    <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">人聲 + 低音聲部 + 鼓組 + 鋼琴 + 其他</lang>
+    <lang english="Please select an output directory" control="output_message">請指定儲存路徑</lang>
+    <lang english="Running update command" control="run_update">執行更新命令</lang>
+    <lang english="This might take a while, wait for the beep" control="run_update_b">可能需要一點時間，請等候提示音</lang>
+    <lang english="Version" control="version">版本</lang>
+    <lang english="is available" control="is_available">可更新</lang>
+    <lang english="You are using the latest version" control="latest">您正在使用最新版本</lang>
+    <lang english="Unable get new version data, check internet connection" control="unable">無法取得新版本資訊，請檢查網路連線</lang>
+    <lang english="Choose output location" control="set_output">選擇儲存位置</lang>
+    <lang english="Choose location of python.exe" control="set_python_path">選擇 python.exe 所在位置</lang>
 </root>

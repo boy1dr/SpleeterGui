@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <root>
-  <language english="Japanese" control="">日本人</language>
+  <language english="Japanese" control="">日本語</language>
   <!-- menu items -->
   <menu english="File" control="fileToolStripMenuItem">ファイル</menu>
-  <menu english="Exit" control="exitToolStripMenuItem">出口</menu>
-  <menu english="Help" control="helpToolStripMenuItem">助けて</menu>
+  <menu english="Exit" control="exitToolStripMenuItem">終了</menu>
+  <menu english="Help" control="helpToolStripMenuItem">ヘルプ</menu>
   <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">ヘルプとFAQ</menu>
   <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SlitGUIのバージョンを確認する</menu>
   <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeterコアのアップグレード</menu>

@@ -228,7 +228,7 @@ namespace SpleeterGui
                 textBox1.AppendText(langStr["processing"] + " " + filename + "\r\n");
                 progress_txt.Text = langStr["working"] + "..." + files_remain + " "+ langStr["songs_remaining"];
 
-                ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m spleeter separate -B tensorflow -i " + (char)34 + filename + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -d "+ (duration.Value).ToString()  + " -p " + (char)34 + storage + @"\config.json" + (char)34);
+                ProcessStartInfo processStartInfo = new ProcessStartInfo(pyPath, @" -W ignore -m spleeter separate  -i " + (char)34 + filename + (char)34 + " -o " + (char)34 + txt_output_directory.Text + (char)34 + " -d "+ (duration.Value).ToString()  + " -p " + (char)34 + storage + @"\config.json" + (char)34);    //-B tensorflow
                 processStartInfo.WorkingDirectory = storage;
 
                 processStartInfo.UseShellExecute = false;
