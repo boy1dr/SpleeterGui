@@ -2,17 +2,17 @@
 <root>
   <language english="Japanese" control="">日本語</language>
   <!-- menu items -->
-  <menu english="File" control="fileToolStripMenuItem">ファイル</menu>
-  <menu english="Exit" control="exitToolStripMenuItem">終了</menu>
-  <menu english="Help" control="helpToolStripMenuItem">ヘルプ</menu>
-  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">ヘルプとFAQ</menu>
-  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SlitGUIのバージョンを確認する</menu>
-  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeterコアのアップグレード</menu>
-  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI githubページ</menu>
-  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">そうする</menu>
-  <menu english="Advanced" control="advancedToolStripMenuItem">高度な</menu>
-  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUIパスを設定します</menu>
-  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">json設定パスを設定する</menu>
+  <menu english="File" control="fileToolStripMenuItem">ファイル(&amp;F)</menu>
+  <menu english="Exit" control="exitToolStripMenuItem">終了(&amp;X)</menu>
+  <menu english="Help" control="helpToolStripMenuItem">ヘルプ(&amp;H)</menu>
+  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">ヘルプと FAQ(&amp;H)</menu>
+  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SpleeterGUI のバージョンを確認する(&amp;C)</menu>
+  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter コアのアップグレード(&amp;U)</menu>
+  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI GitHub ページ(&amp;G)</menu>
+  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so(&amp;M)</menu>
+  <menu english="Advanced" control="advancedToolStripMenuItem">高度な設定(&amp;A)</menu>
+  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUI のパスを設定する(&amp;S)</menu>
+  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">json 設定パスを設定する(&amp;J)</menu>
 
 
   <!-- form controls -->
