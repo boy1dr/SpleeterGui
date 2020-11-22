@@ -13,7 +13,7 @@ I will provide the latest version of the software on my github and keep all prev
   
 If there is a new location for an installable version of this software i will link it here.  
   
-The compressed project is now 904MB and is downloaded 4,400 times per month (averaged per month over the past 12 months...no joke). so expect ~4TB/month.  
+The compressed project is now 904MB and is downloaded 4,400 times per month (averaged per month over the past 12 months). so expect ~4TB/month.  
    
 I have always provided a complied version of this software for easy install but Microsoft continue to flag these as virus infected and i can no longer suppor such an endeavour.  
   
