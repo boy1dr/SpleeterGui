@@ -5,7 +5,7 @@ Windows Desktop Front end for Spleeter - AI source separation
    
 ## So long and thanks for all the fish!  
   
-I have enjoyed the popularity of this software and can only hope it that it continues to be an asset to those who would find it useful.  
+I have enjoyed the popularity of this software and can only hope that it continues to be an asset to those who would find it useful.  
   
 Please contact me mitchell_cj@hotmail.com if you would like to take on this project and continue to provide it for general use.  
   
