@@ -2,6 +2,27 @@
 Windows Desktop Front end for Spleeter - AI source separation  
    
 
+   
+##So long and thanks for all the fish!  
+  
+I have enjoyed the popularty of this software and can only hope it that it continues to be an asset to those who would find it useful.  
+  
+Please contact me mitchell_cj@hotmail.com if you would like to take on this project and continue to provide it for general use.  
+  
+I will provide the latest version of the software on my github and keep all prevous github repositories online. But any and all donwloadable packages will be removed.  
+  
+If there is a new location for an installable version of this software i will link it here.  
+  
+The compressed project is now 904MB and is downloaded 4,400 times per month (averaged per month over the past 12 months...no joke). so expect ~4TB/month.  
+   
+I have always provided a complied verion of this software for easy install but Microsoft continue to flag these as virus infected and i can no longer suport such an endeavour.  
+  
+Please understand this decision has not come lightly.  
+    
+It is also likely that in the next few weeks i will pull my content from youtube because of a very recent change to their TOS.  
+
+---------------------------------  
+
 Latest installer can be downloaded from here https://makenweb.com/#spleetergui  
 No need to install python or spleeter, this app contains a portable version of python pre-loaded with spleeter.  
 
