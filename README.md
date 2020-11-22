@@ -9,7 +9,7 @@ I have enjoyed the popularty of this software and can only hope it that it conti
   
 Please contact me mitchell_cj@hotmail.com if you would like to take on this project and continue to provide it for general use.  
   
-I will provide the latest version of the software on my github and keep all prevous github repositories online. But any and all donwloadable packages will be removed.  
+I will provide the latest version of the software on my github and keep all prevous github repositories online. But any and all downloadable packages will be removed.  
   
 If there is a new location for an installable version of this software i will link it here.  
   
