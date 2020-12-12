@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <language english="german" control="">deutsch</language>
+    <!-- menu items -->
+    <menu english="File" control="fileToolStripMenuItem">Datei</menu>
+    <menu english="Exit" control="exitToolStripMenuItem">Beenden</menu>
+    <menu english="Help" control="helpToolStripMenuItem">Hilfe</menu>
+    <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Hilfe &amp; FAQ</menu>
+    <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SpleeterGUI-Version überprüfen</menu>
+    <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter Core-Upgrade</menu>
+    <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI GitHub-Seite</menu>
+    <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+    <menu english="Advanced" control="advancedToolStripMenuItem">Erweitert</menu>
+    <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUI-Pfad festlegen</menu>
+    <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">JSON-Konfigurationspfad festlegen</menu>
+
+  
+  <!-- form controls -->
+    <item english="Music source separation" control="lblSlogan1">Trennung von Musikquellen</item>
+    <item english="Windows desktop bundle" control="lblSlogan2">Windows-Desktop-Paket</item>
+    <item english="Parts to separate" control="lblPartsTitle">Zu trennende Elemente</item>
+    <item english="2" control="parts_btn2">2</item>
+    <item english="Vocal + Accompaniment" control="parts_label">Gesang + Begleitung</item>
+    <item english="4" control="parts_btn4">4</item>
+    <item english="5" control="parts_btn5">5</item>
+    <item english="Recombine (Merge output parts back together)" control="chkRecombine">Rekombinieren (Ausgangselemente wieder zusammenführen)</item>
+    <item english="Vocal" control="chkRPartVocal">Gesang</item>
+    <item english="Bass" control="chkRPartBass">Bass</item>
+    <item english="Drums" control="chkRPartDrums">Schlagzeug</item>
+    <item english="Piano" control="chkRPartPiano">Klavier</item>
+    <item english="Other" control="chkRPartOther">Sonstiges</item>
+    <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">Volle Bandbreite (16Khz Hohe Qualität)</item>
+    <item english="Save to" control="btnSaveTo">Speichern unter</item>
+    <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Legen Sie Ihre Musikdatei(en) hier ab, um die Verarbeitung zu starten</item>
+    <item english="Or select music file(s)" control="btnSelectFiles">Oder Musikdatei(en) auswählen</item>
+    <item english="Progress" control="lblProgress">Fortschritt</item>
+    <item english="Maximum song length" control="lblMaxLength">Maximale Liedlänge</item>
+    <item english="seconds" control="lblSeconds">Sekunden</item>
+  
+
+    <!-- program texts -->
+    <lang english="Showing spleeter version" control="LoadStuff_textBox1">Hilfe: https://makenweb.com/spleeter_help.php[NL]Probleme: https://github.com/boy1dr/SpleeterGui/issues[NL][NL]Anzeige der Spleeter-Version</lang>
+    <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Bitte wählen Sie ein Ausgabeverzeichnis</lang>
+    <lang english="Starting" control="starting">Starten</lang>
+    <lang english="Starting processing of all songs" control="starting_all">Verarbeitung aller Lieder starten</lang>
+    <lang english="songs remaining" control="songs_remaining">Lieder verbleibend</lang>
+    <lang english="Working" control="working">Arbeiten</lang>
+    <lang english="Processing" control="processing">Verarbeiten</lang>
+    <lang english="idle" control="idle">Leerlauf</lang>
+    <lang english="Finished processing all songs" control="finished">Verarbeitung aller Lieder fertiggestellt</lang>
+    <lang english="Run complete" control="run_complete">Durchlauf abgeschlossen</lang>
+    <lang english="Vocal + Accompaniment" control="vocal_accompaniment">Gesang + Begleitung</lang>
+    <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">Gesang + Bass + Schlagzeug + Sonstiges</lang>
+    <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">Gesang + Bass + Schlagzeug + Klavier + Sonstiges</lang>
+    <lang english="Please select an output directory" control="output_message">Bitte wählen Sie ein Ausgabeverzeichnis</lang>
+    <lang english="Running update command" control="run_update">Update-Befehl ausführen</lang>
+    <lang english="This might take a while, wait for the beep" control="run_update_b">Dies kann eine Weile dauern, warten Sie auf den Signalton</lang>
+    <lang english="Version" control="version">Version</lang>
+    <lang english="is available" control="is_available">ist verfügbar</lang>
+    <lang english="You are using the latest version" control="latest">Sie verwenden die neueste Version</lang>
+    <lang english="Unable get new version data, check internet connection" control="unable">Neue Versionsdaten können nicht abgerufen werden, Internetverbindung prüfen</lang>
+    <lang english="Choose output location" control="set_output">Ausgabeort wählen</lang>
+    <lang english="Choose location of python.exe" control="set_python_path">Speicherort von python.exe wählen</lang>
+</root>
