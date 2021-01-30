@@ -2,63 +2,63 @@
 <root>
   <language english="Japanese" control="">日本語</language>
   <!-- menu items -->
-  <menu english="File" control="fileToolStripMenuItem">ファイル</menu>
-  <menu english="Exit" control="exitToolStripMenuItem">終了</menu>
-  <menu english="Help" control="helpToolStripMenuItem">ヘルプ</menu>
-  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">ヘルプとFAQ</menu>
-  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SlitGUIのバージョンを確認する</menu>
-  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeterコアのアップグレード</menu>
-  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI githubページ</menu>
-  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">そうする</menu>
-  <menu english="Advanced" control="advancedToolStripMenuItem">高度な</menu>
-  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUIパスを設定します</menu>
-  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">json設定パスを設定する</menu>
+  <menu english="File" control="fileToolStripMenuItem">ファイル(&amp;F)</menu>
+  <menu english="Exit" control="exitToolStripMenuItem">終了(&amp;X)</menu>
+  <menu english="Help" control="helpToolStripMenuItem">ヘルプ(&amp;H)</menu>
+  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">ヘルプと FAQ(&amp;H)</menu>
+  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SpleeterGUI のバージョンを確認する(&amp;C)</menu>
+  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter コアのアップグレード(&amp;U)</menu>
+  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI GitHub ページ(&amp;G)</menu>
+  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so(&amp;M)</menu>
+  <menu english="Advanced" control="advancedToolStripMenuItem">高度な設定(&amp;A)</menu>
+  <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUI のパスを設定する(&amp;S)</menu>
+  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">json 設定パスを設定する(&amp;J)</menu>
 
 
   <!-- form controls -->
   <item english="Music source separation" control="lblSlogan1">音楽ソースの分離</item>
-  <item english="Windows desktop bundle" control="lblSlogan2">Windowsデスクトップバンドル</item>
-  <item english="Parts to separate" control="lblPartsTitle">分離するパーツ</item>
-  <item english="2" control="parts_btn2">二</item>
+  <item english="Windows desktop bundle" control="lblSlogan2">Windows デスクトップバンドル</item>
+  <item english="Parts to separate" control="lblPartsTitle">分離するパート</item>
+  <item english="2" control="parts_btn2">2</item>
   <item english="Vocal + Accompaniment" control="parts_label">ボーカル + 伴奏</item>
-  <item english="4" control="parts_btn4">四</item>
-  <item english="5" control="parts_btn5">五</item>
-  <item english="Recombine (Merge output parts back together)" control="chkRecombine">再結合（出力パーツをマージして戻す）</item>
+  <item english="4" control="parts_btn4">4</item>
+  <item english="5" control="parts_btn5">5</item>
+  <item english="Recombine (Merge output parts back together)" control="chkRecombine">再結合（指定したパートを合成）</item>
   <item english="Vocal" control="chkRPartVocal">ボーカル</item>
   <item english="Bass" control="chkRPartBass">ベース</item>
   <item english="Drums" control="chkRPartDrums">ドラム</item>
   <item english="Piano" control="chkRPartPiano">ピアノ</item>
-  <item english="Other" control="chkRPartOther">その他の</item>
-  <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">全帯域幅（16Khz高品質）</item>
-  <item english="Save to" control="btnSaveTo">に保存</item>
-  <item english="Drop your music file(s) here to begin processing" control="lblDroptext">ここに音楽ファイルをドロップして、処理を開始します</item>
-  <item english="Or select music file(s)" control="btnSelectFiles">または音楽ファイルを選択します</item>
+  <item english="Other" control="chkRPartOther">その他</item>
+  <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">全帯域幅（16Khz 高品質）</item>
+  <item english="Save to" control="btnSaveTo">出力先</item>
+  <item english="Drop your music file(s) here to begin processing" control="lblDroptext">ここに音楽ファイル（複数可）をドロップして処理を開始します</item>
+  <item english="Or select music file(s)" control="btnSelectFiles">または音楽ファイル選択</item>
   <item english="Progress" control="lblProgress">進捗</item>
   <item english="Maximum song length" control="lblMaxLength">曲の最大長</item>
   <item english="seconds" control="lblSeconds">秒</item>
 
 
   <!-- program texts -->
-  <lang english="Showing spleeter version" control="LoadStuff_textBox1">助けて: https://makenweb.com/spleeter_help.php[NL]問題: https://github.com/boy1dr/SpleeterGui/issues[NL][NL]脾臓のバージョンを表示しています</lang>
-  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">出力ディレクトリを選択してください</lang>
+  <lang english="Showing spleeter version" control="LoadStuff_textBox1">ヘルプ: https://makenweb.com/spleeter_help.php[NL]問題: https://github.com/boy1dr/SpleeterGui/issues[NL][NL]Spleeter のバージョンを表示しています</lang>
+  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">出力先を選択してください</lang>
   <lang english="Starting" control="starting">起動</lang>
   <lang english="Starting processing of all songs" control="starting_all">すべての曲の処理を開始しています</lang>
-  <lang english="songs remaining" control="songs_remaining">残りの曲</lang>
-  <lang english="Working" control="working">ワーキング</lang>
+  <lang english="songs remaining" control="songs_remaining"> 曲残っています</lang>
+  <lang english="Working" control="working">処理中</lang>
   <lang english="Processing" control="processing">処理</lang>
   <lang english="idle" control="idle">アイドル</lang>
   <lang english="Finished processing all songs" control="finished">すべての曲の処理が終了しました</lang>
-  <lang english="Run complete" control="run_complete">完全に実行</lang>
-  <lang english="Vocal + Accompaniment" control="vocal_accompaniment">ボーカル+伴奏</lang>
-  <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">ボーカル+ベース+ドラム+その他</lang>
-  <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">ボーカル+ベース+ドラム+ピアノ+その他</lang>
-  <lang english="Please select an output directory" control="output_message">出力ディレクトリを選択してください</lang>
+  <lang english="Run complete" control="run_complete">完了</lang>
+  <lang english="Vocal + Accompaniment" control="vocal_accompaniment">ボーカル + 伴奏</lang>
+  <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">ボーカル + ベース + ドラム + その他</lang>
+  <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">ボーカル + ベース + ドラム + ピアノ + その他</lang>
+  <lang english="Please select an output directory" control="output_message">出力先を選択してください</lang>
   <lang english="Running update command" control="run_update">更新コマンドを実行しています</lang>
-  <lang english="This might take a while, wait for the beep" control="run_update_b">しばらく時間がかかるかもしれませんが、ビープ音が出るのを待ちます</lang>
+  <lang english="This might take a while, wait for the beep" control="run_update_b">しばらく時間がかかるかもしれませんが、ビープ音が出るまでお待ちください</lang>
   <lang english="Version" control="version">バージョン</lang>
   <lang english="is available" control="is_available">利用可能です</lang>
   <lang english="You are using the latest version" control="latest">最新バージョンを使用しています</lang>
   <lang english="Unable get new version data, check internet connection" control="unable">新しいバージョンのデータを取得できません。インターネット接続を確認してください</lang>
-  <lang english="Choose output location" control="set_output">出力場所を選択</lang>
-  <lang english="Choose location of python.exe" control="set_python_path">python.exeの場所を選択</lang>
+  <lang english="Choose output location" control="set_output">出力先を選択</lang>
+  <lang english="Choose location of python.exe" control="set_python_path">python.exe の場所を選択</lang>
 </root>
