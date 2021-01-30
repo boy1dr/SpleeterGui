@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <language english="korean" control="">한국어</language>
+    <!-- menu items -->
+    <menu english="File" control="fileToolStripMenuItem">파일</menu>
+    <menu english="Exit" control="exitToolStripMenuItem">종료</menu>
+    <menu english="Help" control="helpToolStripMenuItem">도움</menu>
+    <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">도움말과 &amp; FAQ</menu>
+    <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">spleeterGUI 버전체크</menu>
+    <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter 핵심파일 업데이트</menu>
+    <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI의 github 페이지</menu>
+    <menu english="Maken it so" control="makenItSoToolStripMenuItem1">만든이 Maken it so</menu>
+    <menu english="Advanced" control="advancedToolStripMenuItem">고급 옵션</menu>
+    <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUI 경로 설정</menu>
+    <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">json 설정집 경로 설정</menu>
+
+  
+  <!-- form controls -->
+    <item english="Music source separation" control="lblSlogan1">음원 분리 프로그램</item>
+    <item english="Windows desktop bundle" control="lblSlogan2">윈도우 GUI 버전</item>
+    <item english="Parts to separate" control="lblPartsTitle">음원 분리 설정</item>
+    <item english="2" control="parts_btn2">2</item>
+    <item english="Vocal + Accompaniment" control="parts_label">보컬 + 반주</item>
+    <item english="4" control="parts_btn4">4</item>
+    <item english="5" control="parts_btn5">5</item>
+    <item english="Recombine (Merge output parts back together)" control="chkRecombine">재결합 (분리된 음원중 재결합하여 출력할 요소 선택)</item>
+    <item english="Vocal" control="chkRPartVocal">보컬</item>
+    <item english="Bass" control="chkRPartBass">베이스</item>
+    <item english="Drums" control="chkRPartDrums">드럼</item>
+    <item english="Piano" control="chkRPartPiano">피아노</item>
+    <item english="Other" control="chkRPartOther">기타</item>
+    <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">전체 음역대 설정 (16Khz 이상 음역대 포함 고음질 분리)</item>
+    <item english="Save to" control="btnSaveTo">분리된 음원 저장 경로</item>
+    <item english="Drop your music file(s) here to begin processing" control="lblDroptext">이곳에 음악 파일을 드래그 하여 분리를 시작하십시오</item>
+    <item english="Or select music file(s)" control="btnSelectFiles">혹은 이 단추를 눌러 파일 탐색기로 분리 대상 설정하기</item>
+    <item english="Progress" control="lblProgress">진행도</item>
+    <item english="Maximum song length" control="lblMaxLength">분리할 음원 최대 길이</item>
+    <item english="seconds" control="lblSeconds">초</item>
+  
+
+    <!-- program texts -->
+    <lang english="Showing spleeter version" control="LoadStuff_textBox1">Help: https://makenweb.com/spleeter_help.php[NL]Issues: https://github.com/boy1dr/SpleeterGui/issues[NL][NL]Showing spleeter 버전</lang>
+    <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">출력할 경로를 설정하여 주세요</lang>
+    <lang english="Starting" control="starting">시작중</lang>
+    <lang english="Starting processing of all songs" control="starting_all">선택된 곡들의 분리 작업을 시작중</lang>
+    <lang english="songs remaining" control="songs_remaining">곡 남음</lang>
+    <lang english="Working" control="working">작업중</lang>
+    <lang english="Processing" control="processing">분리중</lang>
+    <lang english="idle" control="idle">대기중</lang>
+    <lang english="Finished processing all songs" control="finished">모든 곡의 분리를 성공했습니다</lang>
+    <lang english="Run complete" control="run_complete">작업 완료</lang>
+    <lang english="Vocal + Accompaniment" control="vocal_accompaniment">보컬 + 반주</lang>
+    <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">보컬 + 베이스 + 드럼 + 기타</lang>
+    <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">보컬 + 베이스 + 드럼 + 피아노 + 기타</lang>
+    <lang english="Please select an output directory" control="output_message">출력할 경로를 설정하여 주세요</lang>
+    <lang english="Running update command" control="run_update">버전 업데이트 실행</lang>
+    <lang english="This might take a while, wait for the beep" control="run_update_b">이 작업을 수행하는데는 시간이 걸립니다. 신호음을 기다려주십시오</lang>
+    <lang english="Version" control="version">버전</lang>
+    <lang english="is available" control="is_available">이 사용 가능합니다</lang>
+    <lang english="You are using the latest version" control="latest">최신 버전을 사용하고 있습니다</lang>
+    <lang english="Unable get new version data, check internet connection" control="unable">최신 버전 정보를 가져오는데 실패했습니다. 인터넷 연결을 확인해주세요</lang>
+    <lang english="Choose output location" control="set_output">출력 경로를 설정해 주십시오</lang>
+    <lang english="Choose location of python.exe" control="set_python_path">python.exe의 경로를 설정해 주십시오</lang>
+</root>
