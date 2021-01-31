@@ -30,9 +30,9 @@
     <item english="Piano" control="chkRPartPiano">피아노</item>
     <item english="Other" control="chkRPartOther">기타</item>
     <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">전체 음역대 설정 (16Khz 이상 음역대 포함 고음질 분리)</item>
-    <item english="Save to" control="btnSaveTo">처리된 파일 저장경로</item>
+    <item english="Save to" control="btnSaveTo">처리후 저장경로</item>
     <item english="Drop your music file(s) here to begin processing" control="lblDroptext">이곳에 음악 파일을 드래그 하여 분리를 시작하십시오</item>
-    <item english="Or select music file(s)" control="btnSelectFiles">파일 탐색기로 분리 대상 설정하기</item>
+    <item english="Or select music file(s)" control="btnSelectFiles">파일 탐색기로 분리 대상 찾기</item>
     <item english="Progress" control="lblProgress">진행도</item>
     <item english="Maximum song length" control="lblMaxLength">분리할 음원 최대 길이</item>
     <item english="seconds" control="lblSeconds">초</item>
