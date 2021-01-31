@@ -43,7 +43,7 @@
     <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Bitte wählen Sie einen Ausgabeort</lang>
     <lang english="Starting" control="starting">Starten</lang>
     <lang english="Starting processing of all songs" control="starting_all">Alle Lieder verarbeiten</lang>
-    <lang english="songs remaining" control="songs_remaining">Verbleibende Lieder</lang>
+    <lang english="songs remaining" control="songs_remaining">Lieder(er) verbleibend</lang>
     <lang english="Working" control="working">Arbeiten</lang>
     <lang english="Processing" control="processing">Verarbeiten</lang>
     <lang english="idle" control="idle">Leerlauf</lang>
