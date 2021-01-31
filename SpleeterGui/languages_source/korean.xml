@@ -61,3 +61,4 @@
     <lang english="Unable get new version data, check internet connection" control="unable">최신 버전 정보를 가져오는데 실패했습니다. 인터넷 연결을 확인해주세요</lang>
     <lang english="Choose output location" control="set_output">출력 경로를 설정해 주십시오</lang>
     <lang english="Choose location of python.exe" control="set_python_path">python.exe의 경로를 설정해 주십시오</lang>
+</root>
