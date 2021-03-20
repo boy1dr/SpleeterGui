@@ -2,62 +2,62 @@
 <root>
   <language english="spanish" control="">español</language>
   <!-- menu items -->
-  <menu english="File" control="fileToolStripMenuItem">Expediente</menu>
-  <menu english="Exit" control="exitToolStripMenuItem">Salida</menu>
+  <menu english="File" control="fileToolStripMenuItem">Archivo</menu>
+  <menu english="Exit" control="exitToolStripMenuItem">Salir</menu>
   <menu english="Help" control="helpToolStripMenuItem">Ayuda</menu>
-  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Ayuda &amp; pregunta</menu>
-  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">Comprueba la versión de spleeterGUI</menu>
-  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Actualización principal de Spleeter</menu>
-  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">Página de github de Spleeter</menu>
-  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Hazlo así</menu>
-  <menu english="Advanced" control="advancedToolStripMenuItem">Avanzada</menu>
+  <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Ayuda &amp; FAQ</menu>
+  <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">Comprobar la versión de spleeterGUI</menu>
+  <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Actualizar núcleo de Spleeter</menu>
+  <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">Abrir Spleeter en GitHub</menu>
+  <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+  <menu english="Advanced" control="advancedToolStripMenuItem">Avanzado</menu>
   <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">Establecer ruta de SpleeterGUI</menu>
-  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Establecer ruta de configuración json</menu>
+  <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Establecer ruta de configuraciones json</menu>
 
   <!-- form controls -->
-  <item english="Music source separation" control="lblSlogan1">Separación de fuente de música</item>
+  <item english="Music source separation" control="lblSlogan1">Descomposición a partir de una fuente de audio</item>
   <item english="Windows desktop bundle" control="lblSlogan2">Paquete de escritorio de Windows</item>
-  <item english="Parts to separate" control="lblPartsTitle">Partes para separar</item>
-  <item english="2" control="parts_btn2">dos</item>
+  <item english="Parts to separate" control="lblPartsTitle">Partes a separar</item>
+  <item english="2" control="parts_btn2">2</item>
   <item english="Vocal + Accompaniment" control="parts_label">Voz + acompañamiento</item>
-  <item english="4" control="parts_btn4">cuatro</item>
-  <item english="5" control="parts_btn5">cinco</item>
-  <item english="Recombine (Merge output parts back together)" control="chkRecombine">Recombine (Fusionar piezas de salida juntas)</item>
+  <item english="4" control="parts_btn4">4</item>
+  <item english="5" control="parts_btn5">5</item>
+  <item english="Recombine (Merge output parts back together)" control="chkRecombine">Combinar (Fusionar archivos de salida)</item>
   <item english="Vocal" control="chkRPartVocal">Vocal</item>
   <item english="Bass" control="chkRPartBass">Bajo</item>
-  <item english="Drums" control="chkRPartDrums">Tambores</item>
+  <item english="Drums" control="chkRPartDrums">Batería/Percusión</item>
   <item english="Piano" control="chkRPartPiano">Piano</item>
-  <item english="Other" control="chkRPartOther">Otra</item>
-  <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">Ancho de banda completo (16Khz de alta calidad)</item>
-  <item english="Save to" control="btnSaveTo">Salvar a</item>
-  <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Suelta tus archivos de música aquí para comenzar a procesar</item>
+  <item english="Other" control="chkRPartOther">Otros</item>
+  <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">Ancho de banda completo (16Khz alta calidad)</item>
+  <item english="Save to" control="btnSaveTo">Guardar en</item>
+  <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Arrastre tus archivos de música aquí para comenzar a procesar</item>
   <item english="Or select music file(s)" control="btnSelectFiles">O seleccione archivos de música</item>
   <item english="Progress" control="lblProgress">Progreso</item>
-  <item english="Maximum song length" control="lblMaxLength">Longitud máxima de la canción</item>
+  <item english="Maximum song length" control="lblMaxLength">Duración máxima de la canción</item>
   <item english="seconds" control="lblSeconds">segundos</item>
 
   <!-- program texts -->
-  <lang english="Showing spleeter version" control="LoadStuff_textBox1">Mostrando la versión esplendorosa</lang>
-  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Por favor seleccione un directorio de salida</lang>
+  <lang english="Showing spleeter version" control="LoadStuff_textBox1">Mostrando versión de Spleeter</lang>
+  <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Por favor, seleccione un directorio de salida</lang>
   <lang english="Starting" control="starting">Comenzando</lang>
   <lang english="Starting processing of all songs" control="starting_all">Iniciando el procesamiento de todas las canciones</lang>
   <lang english="songs remaining" control="songs_remaining">canciones restantes</lang>
   <lang english="Working" control="working">Trabajando</lang>
   <lang english="Processing" control="processing">Procesando</lang>
-  <lang english="idle" control="idle">ociosa</lang>
-  <lang english="Finished processing all songs" control="finished">Terminado de procesar todas las canciones.</lang>
-  <lang english="Run complete" control="run_complete">Ejecutar completa</lang>
+  <lang english="idle" control="idle">En espera</lang>
+  <lang english="Finished processing all songs" control="finished">Se ha terminado de procesar todas las canciones.</lang>
+  <lang english="Run complete" control="run_complete">Ejecución completa</lang>
   <lang english="Vocal + Accompaniment" control="vocal_accompaniment">Voz + acompañamiento</lang>
-  <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">Vocal + Bajo + Batería + Otra</lang>
-  <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">Vocal + Bajo + Batería + Piano + Otra</lang>
-  <lang english="Please select an output directory" control="output_message">Por favor seleccione un directorio de salida</lang>
-  <lang english="Running update command" control="run_update">Ejecutar comando de actualización</lang>
-  <lang english="This might take a while, wait for the beep" control="run_update_b">Esto puede llevar un tiempo, espera el pitido</lang>
+  <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">Vocal + Bajo + Batería + Otros</lang>
+  <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">Vocal + Bajo + Batería + Piano + Otros</lang>
+  <lang english="Please select an output directory" control="output_message">Por favor, seleccione un directorio de salida</lang>
+  <lang english="Running update command" control="run_update">Ejecutando comando de actualización</lang>
+  <lang english="This might take a while, wait for the beep" control="run_update_b">Esto podría tardar un tiempo, espere al pitido</lang>
   <lang english="Version" control="version">Versión</lang>
   <lang english="is available" control="is_available">está disponible</lang>
-  <lang english="You are using the latest version" control="latest">Estás usando la última versión</lang>
-  <lang english="Unable get new version data, check internet connection" control="unable">No se pueden obtener datos de la nueva versión, verifique la conexión a Internet</lang>
-  <lang english="Choose output location" control="set_output">Elegir ubicación de salida</lang>
+  <lang english="You are using the latest version" control="latest">Está usando la última versión</lang>
+  <lang english="Unable get new version data, check internet connection" control="unable">No se pueden obtener los datos de la nueva versión, verifique la conexión a Internet</lang>
+  <lang english="Choose output location" control="set_output">Elija la ubicación de salida</lang>
   <lang english="Choose location of python.exe" control="set_python_path">Elija la ubicación de python.exe</lang>
 
 </root>
