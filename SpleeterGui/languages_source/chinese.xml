@@ -41,7 +41,7 @@
     <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">请选择输出目录</lang>
     <lang english="Starting" control="starting">正在启动</lang>
     <lang english="Starting processing of all songs" control="starting_all">正在开始批量处理音频</lang>
-    <lang english="songs remaining" control="songs_remaining">剩余音频</lang>
+    <lang english="songs remaining" control="songs_remaining">音频剩余</lang>
     <lang english="Working" control="working">正在执行</lang>
     <lang english="Processing" control="processing">正在处理</lang>
     <lang english="idle" control="idle">已完成</lang>
