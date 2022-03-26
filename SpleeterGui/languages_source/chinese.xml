@@ -28,7 +28,7 @@
     <item english="Drums" control="chkRPartDrums">鼓点</item>
     <item english="Piano" control="chkRPartPiano">钢琴</item>
     <item english="Other" control="chkRPartOther">其他</item>
-    <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">全频宽（16Khz 高音质）</item>
+    <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">全频带（16Khz 高音质）</item>
     <item english="Save to" control="btnSaveTo">输出目录</item>
     <item english="Drop your music file(s) here to begin processing" control="lblDroptext">将音频拖到这里开始</item>
     <item english="Or select music file(s)" control="btnSelectFiles">打开音频文件</item>
