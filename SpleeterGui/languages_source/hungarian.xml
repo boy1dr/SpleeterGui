@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <language english="hungarian" control="">magyar</language>
+    <!-- menu items -->
+    <menu english="File" control="fileToolStripMenuItem">Fájl</menu>
+    <menu english="Exit" control="exitToolStripMenuItem">Kilépés</menu>
+    <menu english="Help" control="helpToolStripMenuItem">Segítség</menu>
+    <menu english="Help &amp; FAQ" control="helpFAQToolStripMenuItem">Segítség &amp; GYIK</menu>
+    <menu english="Check spleeterGUI version" control="checkSpleeterGUIUpdateToolStripMenuItem">SpleeterGUI verziószám</menu>
+    <menu english="Spleeter core upgrade" control="spleeterupgradeToolStripMenuItem">Spleeter frissítése </menu>
+    <menu english="SpleeterGUI github page" control="spleeterGithubPageToolStripMenuItem">SpleeterGUI github oldal</menu>
+    <menu english="Maken it so" control="makenItSoToolStripMenuItem1">Maken it so</menu>
+    <menu english="Advanced" control="advancedToolStripMenuItem">Haladó</menu>
+    <menu english="Set SpleeterGUI path" control="setPythonPathToolStripMenuItem1">SpleeterGUI útvonala</menu>
+    <menu english="Set json configs path" control="setJsonConfigsPathToolStripMenuItem1">Set json configs path</menu>
+
+  
+  <!-- form controls -->
+    <item english="Music source separation" control="lblSlogan1">Zene forrás elválasztása</item>
+    <item english="Windows desktop bundle" control="lblSlogan2">Windows desktop bundle</item>
+    <item english="Parts to separate" control="lblPartsTitle">Elválasztandó részek</item>
+    <item english="2" control="parts_btn2">2</item>
+    <item english="Vocal + Accompaniment" control="parts_label">Ének + Kiséret</item>
+    <item english="4" control="parts_btn4">4</item>
+    <item english="5" control="parts_btn5">5</item>
+    <item english="Recombine (Merge output parts back together)" control="chkRecombine">Újrakombinálás (Részek újra egyesítése)</item>
+    <item english="Vocal" control="chkRPartVocal">Vokál</item>
+    <item english="Bass" control="chkRPartBass">Basszus</item>
+    <item english="Drums" control="chkRPartDrums">Dobok</item>
+    <item english="Piano" control="chkRPartPiano">Zongora</item>
+    <item english="Other" control="chkRPartOther">Egyéb</item>
+    <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">Teljes sávszélesség (16Khz Magas minőség)</item>
+    <item english="Save to" control="btnSaveTo">Mentés ide</item>
+    <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Húzza ide a zenei fájl(oka)t</item>
+    <item english="Or select music file(s)" control="btnSelectFiles">Fájl(ok) kiválasztása</item>
+    <item english="Progress" control="lblProgress">Folyamat</item>
+    <item english="Maximum song length" control="lblMaxLength">Maximum zene hosszúság</item>
+    <item english="seconds" control="lblSeconds">másodperc</item>
+  
+
+    <!-- program texts -->
+    <lang english="Showing spleeter version" control="LoadStuff_textBox1">Help: https://makenweb.com/spleeter_help.php[NL]Issues: https://github.com/boy1dr/SpleeterGui/issues[NL][NL]Showing spleeter version</lang>
+    <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Kérem válasszon egy kimeneti mappát</lang>
+    <lang english="Starting" control="starting">Kezdés</lang>
+    <lang english="Starting processing of all songs" control="starting_all">Összes dal feldolgozásának kezdése</lang>
+    <lang english="songs remaining" control="songs_remaining">hátralévő dal(ok)</lang>
+    <lang english="Working" control="working">Working</lang>
+    <lang english="Processing" control="processing">Feldolgozás</lang>
+    <lang english="idle" control="idle">tétlen</lang>
+    <lang english="Finished processing all songs" control="finished">Az összes dal feldolgozása befejeződött</lang>
+    <lang english="Run complete" control="run_complete">Run complete</lang>
+    <lang english="Vocal + Accompaniment" control="vocal_accompaniment">Vokál + Kiséret</lang>
+    <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">Vokál + Basszus + Dobok + Egyéb</lang>
+    <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">Vokál + Basszus + Dobok + Zongora + Egyéb</lang>
+    <lang english="Please select an output directory" control="output_message">Please select an output directory</lang>
+    <lang english="Running update command" control="run_update">Running update command</lang>
+    <lang english="This might take a while, wait for the beep" control="run_update_b">Ez eltarthat egy ideig, várja meg a hangjelzést</lang>
+    <lang english="Version" control="version">Verzió</lang>
+    <lang english="is available" control="is_available">elérhető</lang>
+    <lang english="You are using the latest version" control="latest">Ön a legújabb verziót használja</lang>
+    <lang english="Unable get new version data, check internet connection" control="unable">Nem sikerült lekérni az új verzió adatokat, ellenőrizze az internetkapcsolatot</lang>
+    <lang english="Choose output location" control="set_output">Válassza ki a kimeneti helyet</lang>
+    <lang english="Choose location of python.exe" control="set_python_path">Válassza ki a python.exe helyét</lang>
+</root>
