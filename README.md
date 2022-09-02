@@ -18,6 +18,9 @@ Please consider donating and help pay for hosting and development paypal.me/make
 
 | Date | Version | Notes |
 | ----: |:-------:| ----- |
+| 5/04/2022 | 2.9.2 | Upgraded spleeter to 2.3.0.   Updated python files, the spleeter core update feature is working again. |
+| 30/01/2021 | 2.9.1 | Upgraded spleeter to 2.1.2.   Updated command syntax for latest Spleeter version. |
+| 9/11/2020 | 2.9 | Upgraded spleeter to 2.0.1 and python.  |
 | 31/07/2020 | 2.8 | Upgraded the project to 64bit. |
 | 19/07/2020 | 2.7 | Updated help, set paths for python/ffmpeg (use your own python) |
 | 4/07/2020 | 2.6 | Recombine audio and multi-lingual update. |
@@ -30,8 +33,8 @@ Please consider donating and help pay for hosting and development paypal.me/make
   
 
 ## Older versions  
-Version 2.0 https://drive.google.com/open?id=1O6q68IPwPtAgdpK5ZSKiY5-Ew-jmUv9Y  
-Version 1.1 https://drive.google.com/open?id=1PlZKGzs0K7da5Rq036qChdz3-_Fc9bpq  
+Version 2.8 https://makenweb.com/downloads/SpleeterGUI_V2.8.msi  
+Version 2.7 https://makenweb.com/downloads/SpleeterGUI_V2.7.msi  
 extract it, and run SpleeterGui.exe  
 
 ## Examples
