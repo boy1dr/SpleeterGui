@@ -35,7 +35,6 @@ Please consider donating and help pay for hosting and development paypal.me/make
 ## Older versions  
 Version 2.8 https://makenweb.com/downloads/SpleeterGUI_V2.8.msi  
 Version 2.7 https://makenweb.com/downloads/SpleeterGUI_V2.7.msi  
-extract it, and run SpleeterGui.exe  
 
 ## Examples
 https://www.youtube.com/watch?v=bdNzVPLzOLE  
