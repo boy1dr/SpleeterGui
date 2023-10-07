@@ -56,21 +56,27 @@ namespace SpleeterGui
             //program startup - initialise things
             txt_output_directory.Text = Properties.Settings.Default.output_location;
 
+            string path = Directory.GetCurrentDirectory();
+            path_python = path.ToString() + @"\python";
+            storage = path.ToString();
+            /*
             if (Properties.Settings.Default.path_python == "")
             {
-                path_python = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI\python";
-                storage = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI";
+                
+                //path_python = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI\python";
+                //storage = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\SpleeterGUI";
+                
             }
             else
             {
                 path_python = Properties.Settings.Default.path_python + @"\python";
                 storage = Properties.Settings.Default.path_python;
             }
-
+            */
             
             gui_version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            String version = Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString();
-            this.Text = "SpleeterGUI " + version;
+            //String version = Assembly.GetExecutingAssembly().GetName().Version.Major.ToString() + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor.ToString() + "." + Assembly.GetExecutingAssembly().GetName().Version.MinorRevision.ToString();
+            this.Text = "SpleeterGUI " + gui_version;
 
             
            
@@ -83,8 +89,34 @@ namespace SpleeterGui
 
             string txt = langStr["LoadStuff_textBox1"];
             txt = txt.Replace("[NL]", "\r\n");
-            textBox1.Text = txt + "...\r\n";
-            run_cmd("pip show spleeter");
+
+            // textBox1.Text = txt + "...\r\n";
+            //run_cmd("pip show spleeter"); // 7/10/2023 no pip now
+            string spleet = "";
+            if (Directory.Exists(path_python))
+            {
+                string[] dirs = Directory.GetDirectories(path_python, "spleeter-*", SearchOption.TopDirectoryOnly);
+                foreach (string dir in dirs)
+                {
+                    spleet = dir;
+                    spleet = spleet.Replace(path_python + "\\", "");
+                    spleet = spleet.Replace(".dist-info", "");
+                    textBox1.Text = txt + " [" + spleet + "]\r\n";
+                }
+            }
+            else
+            {
+                //dev mode
+                string[] dirs = Directory.GetDirectories("C:\\temp\\spleeter_target\\SpleeterGUI_core", "spleeter-*", SearchOption.TopDirectoryOnly);
+                
+                foreach (string dir in dirs)
+                {
+                    spleet = dir;
+                    spleet = spleet.Replace("C:\\temp\\spleeter_target\\SpleeterGUI_core\\", "");
+                    spleet = spleet.Replace(".dist-info", "");
+                    textBox1.Text = txt + " [" + spleet + "]\r\n";
+                }
+            }
         }
 
         void get_languages()

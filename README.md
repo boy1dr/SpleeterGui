@@ -1,9 +1,9 @@
 ## SpleeterGUI - Music source separation desktop app  
 Windows Desktop Front end for Spleeter - AI source separation  
    
-Latest installer can be downloaded from here https://makenweb.com/#spleetergui  
+Latest package can be downloaded from here <A href="https://spleetergui.com">https://spleetergui.com</a>
 No need to install python or spleeter, this app contains a portable version of python pre-loaded with spleeter.  
-
+Older versions here https://makenweb.com/#spleetergui  
 The aim for this project is to make it easy for Windows users to download and run Spleeter without needing to use the command line tools to do so.  
 
 ![SpleeterGUI_app](/Spleeter_GUI.png)  
@@ -18,6 +18,7 @@ Please consider donating and help pay for hosting and development paypal.me/make
 
 | Date | Version | Notes |
 | ----: |:-------:| ----- |
+| 7/10/2023 | 2.9.5 | Rebuilt with python 3.10.10 and spleeter 2.4. Updated GUI. New website spleetergui.com |
 | 5/04/2022 | 2.9.2 | Upgraded spleeter to 2.3.0.   Updated python files, the spleeter core update feature is working again. |
 | 30/01/2021 | 2.9.1 | Upgraded spleeter to 2.1.2.   Updated command syntax for latest Spleeter version. |
 | 9/11/2020 | 2.9 | Upgraded spleeter to 2.0.1 and python.  |

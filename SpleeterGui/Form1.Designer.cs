@@ -143,9 +143,11 @@ namespace SpleeterGui
             // 
             this.advancedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.setPythonPathToolStripMenuItem1});
+            this.advancedToolStripMenuItem.Enabled = false;
             this.advancedToolStripMenuItem.Name = "advancedToolStripMenuItem";
             this.advancedToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.advancedToolStripMenuItem.Text = "Advanced";
+            this.advancedToolStripMenuItem.Visible = false;
             // 
             // setPythonPathToolStripMenuItem1
             // 
@@ -176,6 +178,7 @@ namespace SpleeterGui
             // 
             // checkSpleeterGUIUpdateToolStripMenuItem
             // 
+            this.checkSpleeterGUIUpdateToolStripMenuItem.Enabled = false;
             this.checkSpleeterGUIUpdateToolStripMenuItem.Name = "checkSpleeterGUIUpdateToolStripMenuItem";
             this.checkSpleeterGUIUpdateToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.checkSpleeterGUIUpdateToolStripMenuItem.Text = "Check &SpleeterGUI version";
@@ -183,9 +186,11 @@ namespace SpleeterGui
             // 
             // spleeterupgradeToolStripMenuItem
             // 
+            this.spleeterupgradeToolStripMenuItem.Enabled = false;
             this.spleeterupgradeToolStripMenuItem.Name = "spleeterupgradeToolStripMenuItem";
             this.spleeterupgradeToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.spleeterupgradeToolStripMenuItem.Text = "Spleeter core &upgrade";
+            this.spleeterupgradeToolStripMenuItem.Visible = false;
             this.spleeterupgradeToolStripMenuItem.Click += new System.EventHandler(this.spleeterupgradeToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
@@ -202,6 +207,7 @@ namespace SpleeterGui
             // 
             // makenItSoToolStripMenuItem1
             // 
+            this.makenItSoToolStripMenuItem1.Enabled = false;
             this.makenItSoToolStripMenuItem1.Name = "makenItSoToolStripMenuItem1";
             this.makenItSoToolStripMenuItem1.Size = new System.Drawing.Size(212, 22);
             this.makenItSoToolStripMenuItem1.Text = "&Maken It So";
@@ -283,7 +289,7 @@ namespace SpleeterGui
             this.lblSlogan1.AutoSize = true;
             this.lblSlogan1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSlogan1.ForeColor = System.Drawing.Color.Gray;
-            this.lblSlogan1.Location = new System.Drawing.Point(308, 56);
+            this.lblSlogan1.Location = new System.Drawing.Point(286, 56);
             this.lblSlogan1.Name = "lblSlogan1";
             this.lblSlogan1.Size = new System.Drawing.Size(171, 18);
             this.lblSlogan1.TabIndex = 0;
@@ -305,7 +311,7 @@ namespace SpleeterGui
             this.lblSlogan2.AutoSize = true;
             this.lblSlogan2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSlogan2.ForeColor = System.Drawing.Color.Gray;
-            this.lblSlogan2.Location = new System.Drawing.Point(308, 75);
+            this.lblSlogan2.Location = new System.Drawing.Point(286, 75);
             this.lblSlogan2.Name = "lblSlogan2";
             this.lblSlogan2.Size = new System.Drawing.Size(174, 18);
             this.lblSlogan2.TabIndex = 1;
@@ -564,9 +570,10 @@ namespace SpleeterGui
             this.pictureBox1.AccessibleName = "Spleeter logo";
             this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(23, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 71);
+            this.pictureBox1.Size = new System.Drawing.Size(212, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
