@@ -17,7 +17,7 @@
   
   <!-- form controls -->
     <item english="Music source separation" control="lblSlogan1">Trennung von Musikquellen</item>
-    <item english="Windows desktop bundle" control="lblSlogan2">Windows-Desktop-Paket</item>
+    <item english="Windows desktop bundle" control="lblSlogan2">Windows-Desktoppaket</item>
     <item english="Parts to separate" control="lblPartsTitle">Trennmodus</item>
     <item english="2" control="parts_btn2">2</item>
     <item english="Vocal + Accompaniment" control="parts_label">Gesang + Begleitung</item>
@@ -31,27 +31,27 @@
     <item english="Other" control="chkRPartOther">Sonstiges</item>
     <item english="Full bandwidth (16Khz High quality)" control="chkFullBandwidth">Volle Bandbreite (16Khz Hohe Qualität)</item>
     <item english="Save to" control="btnSaveTo">Speichern unter</item>
-    <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Musikdatei(en) hier ablegen, um zu verarbeiten</item>
-    <item english="Or select music file(s)" control="btnSelectFiles">Oder Dateiauswahl</item>
-    <item english="Progress" control="lblProgress">Fortschr.</item>
+    <item english="Drop your music file(s) here to begin processing" control="lblDroptext">Musikdatei(en) zum verarbeiten hier ablegen</item>
+    <item english="Or select music file(s)" control="btnSelectFiles">Oder Datei(en) auswählen</item>
+    <item english="Progress" control="lblProgress">Fortschritt</item>
     <item english="Maximum song length" control="lblMaxLength">Maximale Liedlänge</item>
     <item english="seconds" control="lblSeconds">Sekunden</item>
   
 
     <!-- program texts -->
     <lang english="Showing spleeter version" control="LoadStuff_textBox1">Hilfe: https://makenweb.com/spleeter_help.php[NL]Probleme: https://github.com/boy1dr/SpleeterGui/issues[NL][NL]Anzeige der Spleeter-Version</lang>
-    <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Bitte wählen Sie ein Ausgabeverzeichnis</lang>
+    <lang english="Please select an output directory" control="Form1_DragDrop_msgbox">Bitte wählen Sie einen Ausgabeort</lang>
     <lang english="Starting" control="starting">Starten</lang>
-    <lang english="Starting processing of all songs" control="starting_all">Verarbeitung aller Lieder starten</lang>
-    <lang english="songs remaining" control="songs_remaining">Lied(er) verbleibend</lang>
+    <lang english="Starting processing of all songs" control="starting_all">Alle Lieder verarbeiten</lang>
+    <lang english="songs remaining" control="songs_remaining">Lieder(er) verbleibend</lang>
     <lang english="Working" control="working">Arbeiten</lang>
     <lang english="Processing" control="processing">Verarbeiten</lang>
     <lang english="idle" control="idle">Leerlauf</lang>
-    <lang english="Finished processing all songs" control="finished">Verarbeitung aller Lieder fertiggestellt</lang>
+    <lang english="Finished processing all songs" control="finished">Alle lieder wurden verarbeitet</lang>
     <lang english="Run complete" control="run_complete">Durchlauf abgeschlossen</lang>
-    <lang english="Vocal + Accompaniment" control="vocal_accompaniment">Gesang+Begleitung</lang>
-    <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">Gesang+Bass+Schlagzeug+Sonstiges</lang>
-    <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">Gesang+Bass+Schlagzeug+Klavier+Sonstiges</lang>
+    <lang english="Vocal + Accompaniment" control="vocal_accompaniment">Gesang + Begleitung</lang>
+    <lang english="Vocal + Bass + Drums + Other" control="vocal_bass_drums_other">Gesang + Bass + Schlagzeug + Sonstiges</lang>
+    <lang english="Vocal + Bass + Drums + Piano + Other" control="vocal_bass_drums_piano_other">Gesang + Bass + Schlagzeug + Klavier + Sonstiges</lang>
     <lang english="Please select an output directory" control="output_message">Bitte wählen Sie ein Ausgabeverzeichnis</lang>
     <lang english="Running update command" control="run_update">Update-Befehl ausführen</lang>
     <lang english="This might take a while, wait for the beep" control="run_update_b">Dies kann eine Weile dauern, warten Sie auf den Signalton</lang>
