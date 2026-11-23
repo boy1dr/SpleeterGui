@@ -36,6 +36,9 @@
   <item english="Progress" control="lblProgress">進捗</item>
   <item english="Maximum song length" control="lblMaxLength">曲の最大長</item>
   <item english="seconds" control="lblSeconds">秒</item>
+    <item english="Open folder" control="btnOpenFolder">フォルダーを開く</item>
+    <item english="Cancel" control="btnCancel">キャンセル</item>
+    <item english="Output format" control="lblFormat">出力形式</item>
 
 
   <!-- program texts -->
@@ -61,4 +64,10 @@
   <lang english="Unable get new version data, check internet connection" control="unable">新しいバージョンのデータを取得できません。インターネット接続を確認してください</lang>
   <lang english="Choose output location" control="set_output">出力先を選択</lang>
   <lang english="Choose location of python.exe" control="set_python_path">python.exe の場所を選択</lang>
+    <lang english="Saved to" control="saved_to">保存先</lang>
+    <lang english="Added to queue" control="added_to_queue">キューに追加しました</lang>
+    <lang english="No music files found." control="no_audio_files">音楽ファイルが見つかりません。</lang>
+    <lang english="Cancelled" control="cancelled">キャンセルしました</lang>
+    <lang english="failed" control="failed_count">失敗</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">曲の処理がまだ続いています。中止して終了しますか?</lang>
 </root>

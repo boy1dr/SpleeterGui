@@ -35,6 +35,9 @@
   <item english="Progress" control="lblProgress">Прогресс</item>
   <item english="Maximum song length" control="lblMaxLength">Максимальная длина песни</item>
   <item english="seconds" control="lblSeconds">секунд</item>
+    <item english="Open folder" control="btnOpenFolder">Открыть папку</item>
+    <item english="Cancel" control="btnCancel">Отмена</item>
+    <item english="Output format" control="lblFormat">Формат вывода</item>
 
   <!-- program texts -->
   <lang english="Showing spleeter version" control="LoadStuff_textBox1">Отображение версии spleeter</lang>
@@ -59,4 +62,10 @@
   <lang english="Unable get new version data, check internet connection" control="unable">Невозможно получить данные новой версии, проверьте интернет-соединение</lang>
   <lang english="Choose output location" control="set_output">Выберите место выхода</lang>
   <lang english="Choose location of python.exe" control="set_python_path">Выберите местоположение python.exe</lang>
+    <lang english="Saved to" control="saved_to">Сохранено в</lang>
+    <lang english="Added to queue" control="added_to_queue">Добавлено в очередь</lang>
+    <lang english="No music files found." control="no_audio_files">Музыкальные файлы не найдены.</lang>
+    <lang english="Cancelled" control="cancelled">Отменено</lang>
+    <lang english="failed" control="failed_count">с ошибкой</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">Песни ещё обрабатываются. Остановить и выйти?</lang>
 </root>

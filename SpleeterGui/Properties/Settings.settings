@@ -14,5 +14,11 @@
     <Setting Name="duration" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">600</Value>
     </Setting>
+    <Setting Name="codec" Type="System.String" Scope="User">
+      <Value Profile="(Default)">wav</Value>
+    </Setting>
+    <Setting Name="settings_upgraded" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

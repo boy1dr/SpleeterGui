@@ -36,6 +36,9 @@
     <item english="Progress" control="lblProgress">Fortschr.</item>
     <item english="Maximum song length" control="lblMaxLength">Maximale Liedlänge</item>
     <item english="seconds" control="lblSeconds">Sekunden</item>
+    <item english="Open folder" control="btnOpenFolder">Ordner öffnen</item>
+    <item english="Cancel" control="btnCancel">Abbrechen</item>
+    <item english="Output format" control="lblFormat">Ausgabeformat</item>
   
 
     <!-- program texts -->
@@ -61,4 +64,10 @@
     <lang english="Unable get new version data, check internet connection" control="unable">Neue Versionsdaten können nicht abgerufen werden, Internetverbindung prüfen</lang>
     <lang english="Choose output location" control="set_output">Ausgabeort wählen</lang>
     <lang english="Choose location of python.exe" control="set_python_path">Speicherort von python.exe wählen</lang>
+    <lang english="Saved to" control="saved_to">Gespeichert unter</lang>
+    <lang english="Added to queue" control="added_to_queue">Zur Warteschlange hinzugefügt</lang>
+    <lang english="No music files found." control="no_audio_files">Keine Musikdateien gefunden.</lang>
+    <lang english="Cancelled" control="cancelled">Abgebrochen</lang>
+    <lang english="failed" control="failed_count">fehlgeschlagen</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">Es werden noch Lieder verarbeitet. Abbrechen und beenden?</lang>
 </root>

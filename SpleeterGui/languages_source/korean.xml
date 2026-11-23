@@ -36,6 +36,9 @@
     <item english="Progress" control="lblProgress">진행도</item>
     <item english="Maximum song length" control="lblMaxLength">분리할 음원 최대 길이</item>
     <item english="seconds" control="lblSeconds">초</item>
+    <item english="Open folder" control="btnOpenFolder">폴더 열기</item>
+    <item english="Cancel" control="btnCancel">취소</item>
+    <item english="Output format" control="lblFormat">출력 형식</item>
   
 
     <!-- program texts -->
@@ -61,4 +64,10 @@
     <lang english="Unable get new version data, check internet connection" control="unable">최신 버전 정보를 가져오는데 실패했습니다. 인터넷 연결을 확인해주세요</lang>
     <lang english="Choose output location" control="set_output">출력 경로를 설정해 주십시오</lang>
     <lang english="Choose location of python.exe" control="set_python_path">python.exe의 경로를 설정해 주십시오</lang>
+    <lang english="Saved to" control="saved_to">저장 위치</lang>
+    <lang english="Added to queue" control="added_to_queue">대기열에 추가됨</lang>
+    <lang english="No music files found." control="no_audio_files">음악 파일을 찾을 수 없습니다.</lang>
+    <lang english="Cancelled" control="cancelled">취소됨</lang>
+    <lang english="failed" control="failed_count">실패</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">아직 곡을 처리하는 중입니다. 중지하고 종료할까요?</lang>
 </root>

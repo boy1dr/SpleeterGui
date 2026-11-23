@@ -70,5 +70,29 @@ namespace SpleeterGui.Properties {
                 this["duration"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("wav")]
+        public string codec {
+            get {
+                return ((string)(this["codec"]));
+            }
+            set {
+                this["codec"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool settings_upgraded {
+            get {
+                return ((bool)(this["settings_upgraded"]));
+            }
+            set {
+                this["settings_upgraded"] = value;
+            }
+        }
     }
 }

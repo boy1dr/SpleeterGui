@@ -36,6 +36,9 @@
     <item english="Progress" control="lblProgress">Progress</item>
     <item english="Maximum song length" control="lblMaxLength">Maximum song length</item>
     <item english="seconds" control="lblSeconds">seconds</item>
+    <item english="Open folder" control="btnOpenFolder">Open folder</item>
+    <item english="Cancel" control="btnCancel">Cancel</item>
+    <item english="Output format" control="lblFormat">Output format</item>
   
 
     <!-- program texts -->
@@ -61,4 +64,31 @@
     <lang english="Unable get new version data, check internet connection" control="unable">Unable get new version data, check internet connection</lang>
     <lang english="Choose output location" control="set_output">Choose output location</lang>
     <lang english="Choose location of python.exe" control="set_python_path">Choose location of python.exe</lang>
+    <lang english="Could not find python.exe. Looked for:" control="python_missing">Could not find python.exe. Looked for:</lang>
+    <lang english="Use Advanced &gt; Set SpleeterGUI path to choose the folder that contains the &quot;python&quot; folder." control="python_missing_hint">Use Advanced &gt; Set SpleeterGUI path to choose the folder that contains the &quot;python&quot; folder.</lang>
+    <lang english="That folder does not contain python.exe or a &quot;python&quot; folder with python.exe in it." control="python_not_in_folder">That folder does not contain python.exe or a &quot;python&quot; folder with python.exe in it.</lang>
+    <lang english="The output directory cannot be created or written to:" control="output_unusable">The output directory cannot be created or written to:</lang>
+    <lang english="Saved to" control="saved_to">Saved to</lang>
+    <lang english="FAILED - spleeter exited with error code" control="song_failed">FAILED - spleeter exited with error code</lang>
+    <lang english="Spleeter finished but no output was written. Expected:" control="no_output">Spleeter finished but no output was written. Expected:</lang>
+    <lang english="Recombining" control="recombining">Recombining</lang>
+    <lang english="Recombine failed (ffmpeg error code" control="recombine_failed">Recombine failed (ffmpeg error code</lang>
+    <lang english="Added to queue" control="added_to_queue">Added to queue</lang>
+    <lang english="No music files found." control="no_audio_files">No music files found.</lang>
+    <lang english="Cancelled" control="cancelled">Cancelled</lang>
+    <lang english="failed" control="failed_count">failed</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">Songs are still being processed. Stop and exit?</lang>
+    <lang english="This python does not include pip, so the spleeter core cannot be upgraded from here." control="no_pip">This python does not include pip, so the spleeter core cannot be upgraded from here.</lang>
+    <lang english="Note: only the first {0} seconds of each song are processed (&quot;Maximum song length&quot;)." control="truncated_hint">Note: only the first {0} seconds of each song are processed (&quot;Maximum song length&quot;).</lang>
+    <lang english="Another song in this batch has the same name, so this one is saved as &quot;{0}&quot;." control="same_name_note">Another song in this batch has the same name, so this one is saved as &quot;{0}&quot;.</lang>
+    <lang english="What this means: the model in this folder is incomplete (a download was interrupted). Delete the folder and try again; it is downloaded again automatically:" control="hint_model">What this means: the model in this folder is incomplete (a download was interrupted). Delete the folder and try again; it is downloaded again automatically:</lang>
+    <lang english="What this means: the computer ran out of memory. Try a shorter &quot;Maximum song length&quot;, fewer parts, or close other programs." control="hint_memory">What this means: the computer ran out of memory. Try a shorter &quot;Maximum song length&quot;, fewer parts, or close other programs.</lang>
+    <lang english="What this means: the model could not be downloaded. Check the internet connection (or proxy / firewall) and try again. Models are fetched from github.com/deezer/spleeter and stored in:" control="hint_download">What this means: the model could not be downloaded. Check the internet connection (or proxy / firewall) and try again. Models are fetched from github.com/deezer/spleeter and stored in:</lang>
+    <lang english="What this means: a file of the Spleeter core could not be loaded. Antivirus software may have removed it, or the Microsoft Visual C++ Redistributable (x64) is missing. Reinstalling SpleeterGUI usually fixes it." control="hint_dll">What this means: a file of the Spleeter core could not be loaded. Antivirus software may have removed it, or the Microsoft Visual C++ Redistributable (x64) is missing. Reinstalling SpleeterGUI usually fixes it.</lang>
+    <lang english="What this means: ffmpeg.exe / ffprobe.exe were not found. They belong in the SpleeterGUI core folder, next to the &quot;python&quot; folder." control="hint_ffmpeg">What this means: ffmpeg.exe / ffprobe.exe were not found. They belong in the SpleeterGUI core folder, next to the &quot;python&quot; folder.</lang>
+    <lang english="What this means: spleeter is not installed in this python:" control="hint_no_spleeter">What this means: spleeter is not installed in this python:</lang>
+    <lang english="What this means: this file could not be read as audio. It may be damaged, or not a music file." control="hint_bad_file">What this means: this file could not be read as audio. It may be damaged, or not a music file.</lang>
+    <lang english="The model in this folder is incomplete, so it is downloaded again:" control="model_incomplete">The model in this folder is incomplete, so it is downloaded again:</lang>
+    <lang english="The model in this folder is incomplete, and another SpleeterGUI window is open that may be downloading it right now. Try again when that has finished (or close the other window):" control="model_busy">The model in this folder is incomplete, and another SpleeterGUI window is open that may be downloading it right now. Try again when that has finished (or close the other window):</lang>
+    <lang english="Looking for music files..." control="scanning">Looking for music files...</lang>
 </root>
