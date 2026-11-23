@@ -35,6 +35,9 @@
   <item english="Progress" control="lblProgress">प्रगति</item>
   <item english="Maximum song length" control="lblMaxLength">अधिकतम गीत की लंबाई</item>
   <item english="seconds" control="lblSeconds">सेकंड</item>
+    <item english="Open folder" control="btnOpenFolder">फ़ोल्डर खोलें</item>
+    <item english="Cancel" control="btnCancel">रद्द करें</item>
+    <item english="Output format" control="lblFormat">आउटपुट फ़ॉर्मेट</item>
 
   <!-- program texts -->
   <lang english="Showing spleeter version" control="LoadStuff_textBox1">स्पिलटर संस्करण दिखा रहा है</lang>
@@ -59,4 +62,10 @@
   <lang english="Unable get new version data, check internet connection" control="unable">नया संस्करण डेटा प्राप्त करने में असमर्थ, इंटरनेट कनेक्शन जांचें</lang>
   <lang english="Choose output location" control="set_output">आउटपुट स्थान चुनें</lang>
   <lang english="Choose location of python.exe" control="set_python_path">Python.exe का स्थान चुनें</lang>
+    <lang english="Saved to" control="saved_to">यहाँ सहेजा गया</lang>
+    <lang english="Added to queue" control="added_to_queue">कतार में जोड़ा गया</lang>
+    <lang english="No music files found." control="no_audio_files">कोई संगीत फ़ाइल नहीं मिली।</lang>
+    <lang english="Cancelled" control="cancelled">रद्द किया गया</lang>
+    <lang english="failed" control="failed_count">विफल</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">गाने अभी भी प्रोसेस हो रहे हैं। रोककर बाहर निकलें?</lang>
 </root>

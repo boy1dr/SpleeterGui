@@ -35,6 +35,9 @@
     <item english="Progress" control="lblProgress">進度</item>
     <item english="Maximum song length" control="lblMaxLength">最大歌曲長度</item>
     <item english="seconds" control="lblSeconds">秒</item>
+    <item english="Open folder" control="btnOpenFolder">開啟資料夾</item>
+    <item english="Cancel" control="btnCancel">取消</item>
+    <item english="Output format" control="lblFormat">輸出格式</item>
 
     <!-- program texts -->
     <lang english="Showing spleeter version" control="LoadStuff_textBox1">說明：https://makenweb.com/spleeter_help.php[NL]問題：https://github.com/boy1dr/SpleeterGui/issues[NL][NL]顯示 spleeter 版本</lang>
@@ -59,4 +62,10 @@
     <lang english="Unable get new version data, check internet connection" control="unable">無法取得新版本資訊，請檢查網路連線</lang>
     <lang english="Choose output location" control="set_output">選擇儲存位置</lang>
     <lang english="Choose location of python.exe" control="set_python_path">選擇 python.exe 所在位置</lang>
+    <lang english="Saved to" control="saved_to">已儲存至</lang>
+    <lang english="Added to queue" control="added_to_queue">已加入佇列</lang>
+    <lang english="No music files found." control="no_audio_files">找不到音樂檔案。</lang>
+    <lang english="Cancelled" control="cancelled">已取消</lang>
+    <lang english="failed" control="failed_count">失敗</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">歌曲仍在處理中。要停止並結束嗎？</lang>
 </root>

@@ -35,6 +35,9 @@
     <item english="Progress" control="lblProgress">Avanzam.</item>
     <item english="Maximum song length" control="lblMaxLength">Lunghezza massima del brano</item>
     <item english="seconds" control="lblSeconds">secondi</item>
+    <item english="Open folder" control="btnOpenFolder">Apri cartella</item>
+    <item english="Cancel" control="btnCancel">Annulla</item>
+    <item english="Output format" control="lblFormat">Formato di output</item>
 
     <!-- program texts -->
     <lang english="Showing spleeter version" control="LoadStuff_textBox1">Visualizzazione della versione di Spleeter</lang>
@@ -60,4 +63,10 @@
     <lang english="Choose output location" control="set_output">Scegli la posizione di uscita</lang>
     <lang english="Choose location of python.exe" control="set_python_path">Scegli la posizione di python.exe</lang>
     <lang english="Choose location of json config files" control="set_json_path">Choose location of json config files</lang>
+    <lang english="Saved to" control="saved_to">Salvato in</lang>
+    <lang english="Added to queue" control="added_to_queue">Aggiunto alla coda</lang>
+    <lang english="No music files found." control="no_audio_files">Nessun file musicale trovato.</lang>
+    <lang english="Cancelled" control="cancelled">Annullato</lang>
+    <lang english="failed" control="failed_count">non riusciti</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">Alcuni brani sono ancora in elaborazione. Interrompere e uscire?</lang>
 </root>

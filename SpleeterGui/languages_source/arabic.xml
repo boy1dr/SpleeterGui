@@ -35,6 +35,9 @@
   <item english="Progress" control="lblProgress">تقدم</item>
   <item english="Maximum song length" control="lblMaxLength">أقصى طول للأغنية</item>
   <item english="seconds" control="lblSeconds">ثواني</item>
+    <item english="Open folder" control="btnOpenFolder">فتح المجلد</item>
+    <item english="Cancel" control="btnCancel">إلغاء</item>
+    <item english="Output format" control="lblFormat">صيغة الإخراج</item>
 
   <!-- program texts -->
   <lang english="Showing spleeter version" control="LoadStuff_textBox1">عرض نسخة مقياس</lang>
@@ -58,5 +61,10 @@
   <lang english="Unable get new version data, check internet connection" control="unable">تعذر الحصول على بيانات الإصدار الجديد ، تحقق من اتصال الإنترنت</lang>
   <lang english="Choose output location" control="set_output">اختر موقع الإخراج</lang>
   <lang english="Choose location of python.exe" control="set_python_path">اختر موقع python.exe</lang>
-
+    <lang english="Saved to" control="saved_to">تم الحفظ في</lang>
+    <lang english="Added to queue" control="added_to_queue">تمت الإضافة إلى قائمة الانتظار</lang>
+    <lang english="No music files found." control="no_audio_files">لم يتم العثور على ملفات موسيقية.</lang>
+    <lang english="Cancelled" control="cancelled">تم الإلغاء</lang>
+    <lang english="failed" control="failed_count">فشل</lang>
+    <lang english="Songs are still being processed. Stop and exit?" control="confirm_exit">ما زالت الأغاني قيد المعالجة. هل تريد الإيقاف والخروج؟</lang>
 </root>
